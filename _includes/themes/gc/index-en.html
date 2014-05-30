@@ -60,7 +60,7 @@
             <div class="container">
                 <div class="row">
                     <div id="wb-sttl" class="col-md-8">
-                        <a href="http://environment-canada.github.io/index-en.html">
+                        <a href="{{ BASE_PATH }}/index-en.html">
                             <img src="{{ ASSET_PATH }}/assets/logo.png" alt="RAMP logo"/> <span>Reusable Accessible Mapping Platform (RAMP)<span class="wb-inv">, </span><small>An open source project led by an award winning team of web mapping developers</small>
                             </span>
                         </a>
@@ -71,7 +71,7 @@
                             <div class="form-group">
                                 <label for="wb-srch-q">Search website</label>
                                 <input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150" />
-                                <input type="hidden" name="q" value="site:http://environment-canada.github.io/ OR site:github.com/environment-canada/" />
+                                <input type="hidden" name="q" value="site:{{ BASE_PATH }}/ OR site:github.com/environment-canada/" />
                             </div>
                             <button type="submit" id="wb-srch-sub" class="btn btn-default">Search</button>		
                         </form>
@@ -84,17 +84,17 @@
                 <h2>Site menu</h2> 
                 <div class="row">
                     <ul class="list-inline menu">
-                         <li><a href="http://environment-canada.github.io/index-en.html">About RAMP</a>
+                         <li><a href="{{ BASE_PATH }}/index-en.html">About RAMP</a>
                     </li>                    
                     <li><a href="https://github.com/Environment-Canada/RAMP-AF">Project Source Code</a>
                     </li>                   
-					 <li><a href="http://environment-canada.github.io/docs/versions/downloads-en.html">Download RAMP</a>
+					 <li><a href="{{ BASE_PATH }}/docs/versions/downloads-en.html">Download RAMP</a>
                     </li>                   
-                    <li><a href="http://environment-canada.github.io/demos/index-en.html">Working Examples</a>
+                    <li><a href="{{ BASE_PATH }}/demos/index-en.html">Working Examples</a>
                     </li>
-					<li><a href="http://environment-canada.github.io/docs/index-en.html">RAMP Documentation</a>
+					<li><a href="{{ BASE_PATH }}/docs/index-en.html">RAMP Documentation</a>
                     </li>
-					<li><a href="http://environment-canada.github.io/api/yuidoc/index.html">API Reference</a>
+					<li><a href="{{ BASE_PATH }}/api/yuidoc/index.html">API Reference</a>
                     </li>
                     </ul>
                 </div>
@@ -115,7 +115,7 @@
             <section class="col-sm-4">
                 <h3>About</h3> 
                 <ul class="list-unstyled">
-                    <li><a href="http://environment-canada.github.io/index-en.html">About RAMP</a>
+                    <li><a href="{{ BASE_PATH }}/index-en.html">About RAMP</a>
                     </li>
                     <li><a href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a>
                     </li>

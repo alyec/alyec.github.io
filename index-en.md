@@ -14,10 +14,10 @@ tagline: Reusable Accessible Mapping Platform
 
 ## Key Resources
 
-* [Documentation](http://environment-canada.github.io/docs/index-en.html)
-* [Downloads](http://environment-canada.github.io/docs/versions/downloads-en.html)
-* [Examples](http://environment-canada.github.io/demos/index-en.html)
-* [Terms and conditions](http://environment-canada.github.io/license-en.html) (MIT license)
+* [Documentation]({{ BASE_PATH }}/docs/index-en.html)
+* [Downloads]({{ BASE_PATH }}/docs/versions/downloads-en.html)
+* [Examples]({{ BASE_PATH }}/demos/index-en.html)
+* [Terms and conditions]({{ BASE_PATH }}/license-en.html) (MIT license)
 * [Source code repository](https://github.com/Environment-Canada/RAMP-AF)
 
 ## Benefits

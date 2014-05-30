@@ -12,4 +12,4 @@ title: Downloads
 
 | Version | Source Code | Release Notes | Release Date
 |----+----|----+----|----+----|----+----
-| Arctic Fox | [Download](#linktozip) | [Release Notes](http://environment-canada.github.io/docs/versions/ReleaseNotes/ArcticFox-en.html) | 2014-06-20
+| Arctic Fox | [Download](#linktozip) | [Release Notes]({{ BASE_PATH }}/docs/versions/ReleaseNotes/ArcticFox-en.html) | 2014-06-20
