@@ -1,11 +1,11 @@
 ---
 layout: index-en
-title: EC - RAMP
+title: RAMP-RACP
 tagline: Reusable Accessible Mapping Platform
 ---
 {% include JB/setup %}
 
-# Reusable Accessible Mapping Platform (RAMP) 
+# Reusable, Accessible, Mapping Platform (RAMP) 
 
 ## What is the RAMP?
 
