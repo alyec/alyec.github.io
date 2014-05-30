@@ -26,8 +26,8 @@ The basic structure of the template file is a key value dictionary, the keys bei
 
 ~~~
 {
-	"TemplateOne": "<b>A bold template</b>",
-	"TemplateTwo": "A plain template"
+    "TemplateOne": "<b>A bold template</b>",
+    "TemplateTwo": "A plain template"
 }
 ~~~
 
@@ -43,11 +43,11 @@ Comments can be added to the files to improve readability.  Both // and /* */ fo
 * to help with your code learnin
 */
 {
-	//A template that returns bold text
-	"TemplateOne": "<b>A bold template</b>",
+    //A template that returns bold text
+    "TemplateOne": "<b>A bold template</b>",
 
-	//A template that returns unformatted text
-	"TemplateTwo": "A plain template"
+    //A template that returns unformatted text
+    "TemplateTwo": "A plain template"
 }
 ~~~
 
@@ -60,7 +60,7 @@ The template references a data object called o.  The value of o is the data obje
 
 ~~~
 {% raw %}{
-	"UrlTemplate": "<a href='{%=o.url%}'>{%=o.text%}</a>"	
+    "UrlTemplate": "<a href='{%=o.url%}'>{%=o.text%}</a>"	
 }{% endraw %}
 ~~~
 
@@ -72,7 +72,7 @@ The template can also call any globally defined javascript function for addition
 
 ~~~
 function itIsFun(subject) {
-	return subject + " is fun!";
+    return subject + " is fun!";
 }
 ~~~
 
@@ -80,7 +80,7 @@ function itIsFun(subject) {
 
 ~~~
 {% raw %}{
-	"SubjectReview": "<div>{%=itIsFun(o.subjectName)%}</div>"	
+    "SubjectReview": "<div>{%=itIsFun(o.subjectName)%}</div>"	
 }{% endraw %}
 ~~~
 
@@ -91,13 +91,13 @@ Templates can embed other templates within them.  They do this by calling the __
 
 ~~~
 {% raw %}{
-	//A link in a div
-	"DivTemplate": "<div class='nice-format'>
-						{% include('UrlTemplate', o); %}
-					</div>",
+    //A link in a div
+    "DivTemplate": "<div class='nice-format'>
+            {% include('UrlTemplate', o); %}
+        </div>",
 
-	//A url link
-	"UrlTemplate": "<a href='{%=o.url%}'>{%=o.text%}</a>"
+    //A url link
+    "UrlTemplate": "<a href='{%=o.url%}'>{%=o.text%}</a>"
 }{% endraw %}
 ~~~
 
@@ -107,24 +107,24 @@ The template can also include embedded javascript to help construct more complex
 
 ~~~
 {% raw %}{
-	//make a full list of properties
-	"PropertiesTemplate": 
-		"<div>
-			<ul>
-				{% for (var prop in o ) { 
-					if (o.hasOwnProperty(prop)) { 
-		   				include('simpleListItem', 
-							{key: prop, value: o[prop]}); 
-					}
-				} %}
-			</ul>
-		</div>",
+    //make a full list of properties
+    "PropertiesTemplate": 
+        "<div>
+            <ul>
+                {% for (var prop in o ) { 
+                    if (o.hasOwnProperty(prop)) { 
+                           include('simpleListItem', 
+                           {key: prop, value: o[prop]}); 
+                    }
+                } %}
+            </ul>
+        </div>",
 
-	//make a list item for one property
-	"simpleListItem": "<li>
-							<p>{%=o.key%}</p>
-							<p>{%=o.value%}</p>
-						</li>"	
+    //make a list item for one property
+    "simpleListItem": "<li>
+                <p>{%=o.key%}</p>
+                <p>{%=o.value%}</p>
+            </li>"    
 }{% endraw %}
 ~~~
 
@@ -151,24 +151,24 @@ result = tmpl("myTemplateName", oDataObject)
 
 ~~~
 {% raw %}{
-	//make a full list of properties
-	"PropertiesTemplate": 
-		"<div>
-			<ul>
-				{% for (var prop in o ) { 
-					if (o.hasOwnProperty(prop)) { 
-		   				include('simpleListItem', 
-							{key: prop, value: o[prop]}); 
-					}
-				} %}
-			</ul>
-		</div>",
+    //make a full list of properties
+    "PropertiesTemplate": 
+        "<div>
+            <ul>
+                {% for (var prop in o ) { 
+                    if (o.hasOwnProperty(prop)) { 
+                           include('simpleListItem', 
+                            {key: prop, value: o[prop]}); 
+                    }
+                } %}
+            </ul>
+        </div>",
 
-	//make a list item for one property
-	"simpleListItem": "<li>
-							<p>{%=o.key%}</p>
-							<p>{%=o.value%}</p>
-						</li>"	
+    //make a list item for one property
+    "simpleListItem": "<li>
+                            <p>{%=o.key%}</p>
+                            <p>{%=o.value%}</p>
+                        </li>"    
 }{% endraw %}
 ~~~
 
@@ -179,24 +179,24 @@ We assume the main page has included the Templating javascript library.
 
 ~~~
 define([
-	"utils/tmplHelper",
-	"dojo/text!./templates/sample_template.json"],
+    "utils/tmplHelper",
+    "dojo/text!./templates/sample_template.json"],
 
 function (tmplHelper, sample_template) { return {
 
-	testTemplate: function() {
+    testTemplate: function() {
 
-		//make some sample data
-		var data = {"user": "HappyDuck", "pwd": "QUACK"};
-		var dataPkg = tmplHelper.dataBuilder(data)
+        //make some sample data
+        var data = {"user": "HappyDuck", "pwd": "QUACK"};
+        var dataPkg = tmplHelper.dataBuilder(data)
 
-		//turn template into JSON, assign to template engine
-		tmpl.templates = JSON.parse(tmplHelper.stringifyTemplate(sample_template));
+        //turn template into JSON, assign to template engine
+        tmpl.templates = JSON.parse(tmplHelper.stringifyTemplate(sample_template));
 
-		var result = tmpl("PropertiesTemplate", dataPkg);
+        var result = tmpl("PropertiesTemplate", dataPkg);
 
-		return result;
-	}
+        return result;
+    }
 
 };
 });
@@ -207,14 +207,14 @@ function (tmplHelper, sample_template) { return {
 
 ~~~
 <div>
-	<ul>
-		<li>
-			<p>user</p><p>HappyDuck</p>
-		</li>
-		<li>
-			<p>pwd</p><p>QUACK</p>
-		</li>
-	</ul>
+    <ul>
+        <li>
+            <p>user</p><p>HappyDuck</p>
+        </li>
+        <li>
+            <p>pwd</p><p>QUACK</p>
+        </li>
+    </ul>
 </div>
 ~~~
 
