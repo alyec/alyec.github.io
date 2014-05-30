@@ -59,11 +59,9 @@ Be careful not to put comments inside the template strings, as they will be incl
 The template references a data object called o.  The value of o is the data object supplied to the template engine when it is called.  Using the embedded value tags {{ "{%= " }} %} we can reference the object and have the value appear in the template output.  E.g. this template will output a hyperlink based on the values in the data object.  The data object must have properties .url and .text to work.
 
 ~~~
-{% raw %}
-{
+{% raw %}{
 	"UrlTemplate": "<a href='{%=o.url%}'>{%=o.text%}</a>"	
-}
-{% endraw %}
+}{% endraw %}
 ~~~
 
 ### Global Javascript Function Calls
@@ -81,11 +79,9 @@ function itIsFun(subject) {
 (template)
 
 ~~~
-{% raw %}
-{
+{% raw %}{
 	"SubjectReview": "<div>{%=itIsFun(o.subjectName)%}</div>"	
-}
-{% endraw %}
+}{% endraw %}
 ~~~
 
 
@@ -94,8 +90,7 @@ function itIsFun(subject) {
 Templates can embed other templates within them.  They do this by calling the __include__ function inside code tags {{ "{% " }} %}.  The include function parameters are the template name, and a data object for that template.  E.g.
 
 ~~~
-{% raw %}
-{
+{% raw %}{
 	//A link in a div
 	"DivTemplate": "<div class='nice-format'>
 						{% include('UrlTemplate', o); %}
@@ -103,8 +98,7 @@ Templates can embed other templates within them.  They do this by calling the __
 
 	//A url link
 	"UrlTemplate": "<a href='{%=o.url%}'>{%=o.text%}</a>"
-}
-{% endraw %}
+}{% endraw %}
 ~~~
 
 
@@ -112,8 +106,7 @@ Templates can embed other templates within them.  They do this by calling the __
 The template can also include embedded javascript to help construct more complex templates.  Code is contained in {{ "{% " }} %} tags.  E.g. this template will loop through all the properties in the data object and generate list items for each property based on a second template.  Note how the __include__ call bundles up a custom data object to pass to the simpleListItem template.
 
 ~~~
-{% raw %}
-{
+{% raw %}{
 	//make a full list of properties
 	"PropertiesTemplate": 
 		"<div>
@@ -132,8 +125,7 @@ The template can also include embedded javascript to help construct more complex
 							<p>{%=o.key%}</p>
 							<p>{%=o.value%}</p>
 						</li>"	
-}
-{% endraw %}
+}{% endraw %}
 ~~~
 
 
@@ -158,8 +150,7 @@ result = tmpl("myTemplateName", oDataObject)
 ### Template File
 
 ~~~
-{% raw %}
-{
+{% raw %}{
 	//make a full list of properties
 	"PropertiesTemplate": 
 		"<div>
@@ -178,8 +169,7 @@ result = tmpl("myTemplateName", oDataObject)
 							<p>{%=o.key%}</p>
 							<p>{%=o.value%}</p>
 						</li>"	
-}
-{% endraw %}
+}{% endraw %}
 ~~~
 
 
