@@ -1,0 +1,20 @@
+﻿/* 
+ * 
+ * This template is not proper JSON as it allows for comments (like this one) and multi-line values.
+ * 
+ * 
+ * JavaScript-Templates templating engine
+ * https://github.com/blueimp/JavaScript-Templates
+ *  
+ *	Column templates for extended datagrid
+ */
+{
+	// templates for extended datagrid
+	// unformatted value template, based on columnIdx and fieldName
+	"unformatted_grid_value":"{%=o.fn.getAttributeValueByName(o.data, o.lyr.datagrid.gridColumns[o.columnIdx].fieldName)%}",
+	// sample icon template
+	"graphic_icon":"<img alt='' src='{%=o.fn.getGraphicIcon(o.data, o.lyr)%}' class='point-image background-white' style='height:25px; width:25px;' >",
+	
+	// Details button
+	"details_button":"<button class='button button-none button-small font-xsmall details' data-feature-url={%=o.lyr.url%} data-feature-oid={%=o.fn.getObjectId(o.data)%}>{%=o.str.txtGrid_details%}</button>"	
+}

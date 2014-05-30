@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }}</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+	<meta name="author" content="{{ site.author.name }}">
+    <!--[if gte IE 9 | !IE ]><!-->
+    <link href="{{ ASSET_PATH }}/assets/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/wet-boew.min.css" />
+    <!--<![endif]-->
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/theme.min.css" />
+    <!--[if lt IE 9]><link href="./assets/favicon.ico" rel="shortcut icon"/> <link rel="stylesheet" href="./css/ie8-wet-boew.min.css"/> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <script src="./js/ie8-wet-boew.min.js"></script><![endif]-->
+    <noscript>
+        <link rel="stylesheet" href="{{ ASSET_PATH }}/css/noscript.min.css" />
+    </noscript>
+	 <!-- atom & rss feed -->
+    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+</head>
+
+<body vocab="http://schema.org/" typeof="WebPage">
+    <ul id="wb-tphp">
+        <li class="wb-slc"> <a class="wb-sl" href="#wb-cont">Skip to main content</a> 
+        </li>
+        <li class="wb-slc visible-md visible-lg"> <a class="wb-sl" href="#wb-info">Skip to site information</a> 
+        </li>
+    </ul>
+    <header role="banner">
+        <div id="wb-bnr">
+            <div id="wb-bar">
+                <div class="container">
+                    <div class="row">
+                        <section id="wb-lng" class="visible-md visible-lg">
+                            <h2>Language selection</h2> 
+                            <ul class="text-right">
+                                <li><a lang="fr" hreflang="fr" href="index-fr.html">Français</a>
+                                </li>
+                                <li class="curr">English&#32;<span>(current)</span>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+                            <h2>Menu</h2> 
+                            <ul class="pnl-btn list-inline text-right">
+                                <li><a href="#mb-pnl" title="Menu" aria-controls="mb-pnl" class="overlay-lnk btn btn-xs btn-default" role="button"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Menu</span></span></a>
+                                </li>
+                            </ul>
+                            <div id="mb-pnl"></div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div id="wb-sttl" class="col-md-8">
+                        <a href="http://environment-canada.github.io/index-en.html">
+                            <img src="{{ ASSET_PATH }}/assets/logo.png" alt="RAMP logo"/> <span>Reusable Accessible Mapping Platform (RAMP)<span class="wb-inv">, </span><small>An open source project led by an award winning team of web mapping developers</small>
+                            </span>
+                        </a>
+                    </div>
+                    <section id="wb-srch" class="col-md-4 visible-md visible-lg">
+                        <h2>Search</h2> 
+                        <form action="https://google.ca/search" method="get" role="search" class="form-inline">
+                            <div class="form-group">
+                                <label for="wb-srch-q">Search website</label>
+                                <input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150" />
+                                <input type="hidden" name="q" value="site:http://environment-canada.github.io/ OR site:github.com/environment-canada/" />
+                            </div>
+                            <button type="submit" id="wb-srch-sub" class="btn btn-default">Search</button>		
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <nav role="navigation" id="wb-sm" data-ajax-fetch="{{ ASSET_PATH }}/ajax/sitemenu-en.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+            <div class="container nvbar">
+                <h2>Site menu</h2> 
+                <div class="row">
+                    <ul class="list-inline menu">
+                         <li><a href="http://environment-canada.github.io/index-en.html">About RAMP</a>
+                    </li>                    
+                    <li><a href="https://github.com/Environment-Canada/RAMP-AF">Project Source Code</a>
+                    </li>                   
+					 <li><a href="http://environment-canada.github.io/docs/versions/downloads-en.html">Download RAMP</a>
+                    </li>                   
+                    <li><a href="http://environment-canada.github.io/demos/index-en.html">Working Examples</a>
+                    </li>
+					<li><a href="http://environment-canada.github.io/docs/index-en.html">RAMP Documentation</a>
+                    </li>
+					<li><a href="http://environment-canada.github.io/api/yuidoc/index.html">API Reference</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" property="mainContentOfPage" class="container">
+	{{ content }}
+	        <dl id="wb-dtmd" property="dateModified"> <dt>Date modified:&#32;</dt> 
+            <dd>
+                <time>{{ site.time | date: '%Y-%m-%d' }}</time>
+            </dd>
+        </dl>
+    </main>
+    <footer role="contentinfo" id="wb-info" class="container visible-sm visible-md visible-lg wb-navcurr">
+        <nav role="navigation" class="row">
+            <h2>Site information</h2> 
+            <section class="col-sm-4">
+                <h3>About</h3> 
+                <ul class="list-unstyled">
+                    <li><a href="http://environment-canada.github.io/index-en.html">About RAMP</a>
+                    </li>
+                    <li><a href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="col-sm-4">
+                <h3>Contact us</h3> 
+                <ul class="list-unstyled">
+                    <li><a href="https://github.com/Environment-Canada/RAMP-AF/issues/new">Questions or comments?</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="col-sm-4">
+                <h3>News</h3> 
+                <ul class="list-unstyled">
+                    <li><a href="https://github.com/Environment-Canada/RAMP-AF/pulse">Recent project activity</a>
+                    </li>
+                    <li><a href="https://github.com/Environment-Canada/RAMP-AF/graphs">Project statistics</a>
+                    </li>
+                </ul>
+            </section>            
+            </section>
+        </nav>
+    </footer>
+	{% include JB/analytics %}
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="{{ ASSET_PATH }}/js/wet-boew.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]><script src="./js/ie8-wet-boew2.min.js"></script><![endif]-->
+</body>
+
+</html>

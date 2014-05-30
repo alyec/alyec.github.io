@@ -1,0 +1,37 @@
+﻿/* 
+ * 
+ * This template is not proper JSON as it allows for comments (like this one) and multi-line values.
+ * 
+ * 
+ * JavaScript-Templates templating engine
+ * https://github.com/blueimp/JavaScript-Templates
+ * 
+ */
+{
+// level 1: filter panel global section
+"filter_global_row_template":	"<div>
+									<div class='global-details'>
+										<div class='global-controls'>
+											<ul class='button-group margin-top-none'>
+												{%=o.txtAllData%}
+											</ul>
+										</div>
+									</div>
+									<div class='global-checkboxes'>
+										{% o.toggleLabels.forEach(function(item){
+												include('filter_global_label_template',item); 
+											});											
+										%}										
+									</div>
+									<div class='clear'>
+									</div>
+								</div>",
+// level 2: filter panel global row; this is where "All Data" is located. Note: should rename this to custom checkbox template.
+//			This template is used to generate 'eye' and 'bondingbox' for All Data
+"filter_global_label_template":	"<div class='checkbox-custom'>
+									<label for='{%=o.id%}' class='form-checkbox {%=o.classAddition%}' title='{%=o.title%}'>
+										<span class='wb-invisible'>{%=o.title%}</span>
+									</label>
+									<input id='{%=o.id%}' data-***='{%=o.dataAttribute%}' value='{%=o.value%}' checked='{%=o.checked%}' class='layerList_legend' type='checkbox' ></input>
+								</div>"
+}

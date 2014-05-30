@@ -1,0 +1,33 @@
+/* 
+ * 
+ * This template is not proper JSON as it allows for comments (like this one) and multi-line values.
+ * 
+ * 
+ * JavaScript-Templates templating engine
+ * https://github.com/blueimp/JavaScript-Templates
+ * 
+ */
+
+ //TODO remove the hardcoded names, apply generic template
+
+{
+	// All in one? currently not used. 
+	"anchored_map_tip":"<div class='map-tip-content'>
+							<img class='map-tip-image pointIconDetails' src='{%=o.fn.getGraphicIcon(o.data, o.lyr)%}' alt='Feature icon'>
+							<span class='map-tip-label'>{%=o.data.attributes[o.lyr.mapTipSettings.hoverTipTemplateFields[0]]%}</span>
+							</div>",
+	// Simple template for anchored map tip for each layer
+	"Test_coarse_proj":"<div class='map-tip-content'>
+							<img class='map-tip-image pointIconDetails' src='{%=o.fn.getGraphicIcon(o.data, o.lyr)%}' alt='Feature icon'>
+							<span class='map-tip-label'>{%=o.data.attributes[o.lyr.mapTipSettings.hoverTipTemplateFields[0]]%}</span>
+							</div>",
+	"CESI2012_freshwater_quality":
+						"<div class='map-tip-content'>
+							<img class='map-tip-image pointIconDetails' src='{%=o.fn.getGraphicIcon(o.data, o.lyr)%}' alt='Feature icon'>
+							<span class='map-tip-label'>{%=o.data.attributes[o.lyr.mapTipSettings.hoverTipTemplateFields[0]]%}</span>
+							</div>",
+	"bbs_routes_canada":"<div class='map-tip-content'>
+							<img class='map-tip-image pointIconDetails' src='{%=o.fn.getGraphicIcon(o.data, o.lyr)%}' alt='Feature icon'>
+							<span class='map-tip-label'>{%=o.data.attributes[o.lyr.mapTipSettings.hoverTipTemplateFields[0]]%}</span>
+							</div>"
+}
