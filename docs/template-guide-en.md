@@ -5,7 +5,7 @@ categories: [documentation]
 ---
 {% include JB/setup %}
 
-# RAMP Naming Conventions
+# RAMP Templating Guide
 
 ## Libraries
 
