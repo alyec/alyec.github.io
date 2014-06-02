@@ -1,4 +1,4 @@
----
+Ôªø---
 layout: index-en
 title: RAMP Setup
 categories: [documentation]
@@ -16,7 +16,7 @@ RAMP uses the [Dojo](http://dojotoolkit.org/) and [ESRI](https://developers.arcg
 	<script type="text/javascript" src="./javascript/src/RAMP/RAMP-starter.js"></script>
 	<script src="http://js.arcgis.com/3.8/" type="text/javascript"></script>
 
-The latter load ESRI and Dojo, the former is a [configuration file](http://dojotoolkit.org/reference-guide/1.9/dojo/_base/config.html) that Dojo needs in order to link up RAMP modules (Note: order matters, the configuration file must be loaded before Dojo). The configuration file contains an object called ìdojoConfigî (it is a globalObject that needs to be named exactly like that, case-sensitive):
+The latter load ESRI and Dojo, the former is a [configuration file](http://dojotoolkit.org/reference-guide/1.9/dojo/_base/config.html) that Dojo needs in order to link up RAMP modules (Note: order matters, the configuration file must be loaded before Dojo). The configuration file contains an object called ‚ÄúdojoConfig‚Äù (it is a globalObject that needs to be named exactly like that, case-sensitive):
 
 	dojoConfig = {
 		parseOnLoad: false,
@@ -37,13 +37,13 @@ Dojo Config Parameters
 
 The dojoConfig object contains many different parameters, the ones relevant for RAMP are outlined below, a description of the rest can be found [here](http://dojotoolkit.org/reference-guide/1.9/dojo/_base/config.html). 
 
-_parseOnLoad_: if true, Dojo will parse your HTML page for any Dojo markups and replace them with widgets. If false, you must manually tell Dojo to parse the page at a later time (Recommended: false, since weíre not using any Dojo markups in RAMP, and parsing creates some overhead during loading).
+_parseOnLoad_: if true, Dojo will parse your HTML page for any Dojo markups and replace them with widgets. If false, you must manually tell Dojo to parse the page at a later time (Recommended: false, since we‚Äôre not using any Dojo markups in RAMP, and parsing creates some overhead during loading).
 
 _locale_: the current locale, since the dojoConfig object is built in javascript, there can be logic to figure out the locale before creating this object. For example:
 
 _async_: if true, Dojo will load all the modules asynchronously (Recommended: true)
 
-_packages_: an array of objects, each object contains a ìnameî and ìlocationî field, which is used to give alias to module locations. The location should be relative to your HTML map page. In the above example, ìrampî is an alias for ìjavascript/src/RAMP/Modules/î, thus if there is a module located at: ìjavascript/src/RAMP/Modules/map.jsî, then using the alias, the module can simply be referenced with ìramp/mapî. 
+_packages_: an array of objects, each object contains a ‚Äúname‚Äù and ‚Äúlocation‚Äù field, which is used to give alias to module locations. The location should be relative to your HTML map page. In the above example, ‚Äúramp‚Äù is an alias for ‚Äújavascript/src/RAMP/Modules/‚Äù, thus if there is a module located at: ‚Äújavascript/src/RAMP/Modules/map.js‚Äù, then using the alias, the module can simply be referenced with ‚Äúramp/map‚Äù. 
 
 Loading the bookstrapper
 ------------------------
