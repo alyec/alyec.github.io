@@ -10,3 +10,8 @@ categories: [documentation]
 
 
 ##Loading Dojo and ESRI
+
+
+
+RAMP uses the [Dojo](http://dojotoolkit.org/) and [ESRI](https://developers.arcgis.com/javascript/) Javascript API, which can be loaded from your main html map page using:
+
