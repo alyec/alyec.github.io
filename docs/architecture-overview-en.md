@@ -15,14 +15,31 @@ AMD
 : [Asynchronous Module Definition](https://github.com/amdjs/amdjs-api/wiki/AMD).  The API DOJO implements to help achieve a more "object oriented" framework in javascript.  Detailed documentation with respect to DOJO's implementation can be found [here](http://dojotoolkit.org/reference-guide/1.9/loader/amd.html)
 
 Anchor Tip 
-: a map tip that remains open until either manually closed by the user, or another anchor tip is opened.  This means you can change the map extent and hover over other features, and the anchor tip will stay active.
+: A map tip that remains open until either manually closed by the user, or another anchor tip is opened.  This means you can change the map extent and hover over other features, and the anchor tip will stay active.
+
+Basemap
+: Background imagery on a map that provides context to features.  Is non-interactive.
+
+Bounding Box
+: A box drawn on the map that indicates the area that a feature set covers.
+
+Extended Grid
+: A grid that has a rich collection of columns.  When active, the map is not visible.  This provides access to the underlying feature data in a traditional table format, and allows data to be sorted.  The extended grid shows the contents of one feature set at a time.
+
+Highlight
+: Causes a feature on the map to stand out from other features and background imagery.  Typically accomplished by dulling out non-highlighted imagery.
 
 Hover Tip 
-: a map tip that is visible only when the mouse is hovering over a feature.
+: A map tip that is visible only when the mouse is hovering over a feature.
 
 RAMP 
 : Reusable Accessible Mapping Platform.  RAMP is a web application that allows for a webmap to be easily created in the WET Template.  The site will meet WCAG AA accessibility standards, and will have useful features available for use.
 
+Summary Grid
+: A grid that has minimal information in it, just enough to identify a point.   The summary grid has entries for all features visible, and combines features across different feature sets.
+
+Topic
+: A publication and subscription framework in [DOJO](http://dojotoolkit.org/reference-guide/1.9/dojo/topic.html).  This is used to pass events in the RAMP source.
 
 
 ## Block Diagram
