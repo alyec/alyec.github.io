@@ -1,11 +1,11 @@
 ---
 layout: index-en
-title: RAMP Setup
+title: Initialization
 categories: [documentation]
 ---
 {% include JB/setup %}
 
-# RAMP Setup
+# Initialization
 
 ## Loading Dojo and ESRI
 
@@ -42,7 +42,7 @@ _async_: if true, Dojo will load all the modules asynchronously (Recommended: tr
 
 _packages_: an array of objects, each object contains a “name” and “location” field, which is used to give alias to module locations. The location should be relative to your HTML map page. In the above example, “ramp” is an alias for “javascript/src/RAMP/Modules/”, thus if there is a module located at: “javascript/src/RAMP/Modules/map.js”, then using the alias, the module can simply be referenced with “ramp/map”. 
 
-## Loading the bookstrapper
+## Loading the bootstrapper
 
 The bootstrapper module is responsible for loading the JSON configuration file used by RAMP and for loading all the modules in the proper order. 
 
