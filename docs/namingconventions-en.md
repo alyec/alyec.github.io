@@ -53,3 +53,63 @@ Why everything is singleton in RAMP:
 * Keeps code simpler. We no longer need to use “this.” everywhere. Using “this” caused a lot of problems with scope when we’re using anonymous functions (e.g. in publish/subscribe, arrayUtil.forEach, deferred.after). We need to “hitch” (using dojo/lang’s hitch function) the scope onto the function, and sometimes when there is an anonymous function nested in another anonymous function, the scoping gets tricky. Numerous times, a variable or function is unexpectedly undefined due to scoping issues. When everything is singleton, we no longer use “this”, instead we declare all the variables at the top of the file, and due to closure, the variables are always in scope. 
 * Each Utility class only needs one instance of itself, there’s no point of having two instance of the same Utility class.
 * Each Resource class only needs one instance of itself for the same reason. 
+
+## Additional Coding Conventions
+
+We recommend using [CodeMaid](http://www.codemaid.net/) to clean up javascript files.  This will ensure they have consistant spacing, indenting, etc.  It is also available as a [Visual Studio Plugin](http://visualstudiogallery.msdn.microsoft.com/76293c4d-8c16-4f4a-aee6-21f83a571496)
+
+All javascript should conform to [JSHint](http://www.jshint.com/docs/options/) rules, with the following configuration options enabled
+
+~~~
+// Enforce
+
+bitwise: true
+camelcase: false
+curly: true
+eqeqeq: true
+es3: false
+forin: true
+freeze: true
+immed: true
+indent: false
+latedef: true
+newcap: true
+noarg: true
+noempty: false
+nonew: true
+plusplus: false
+quotmark: false
+undef: true
+unused: true 
+strict: true
+trailing: true
+
+// Relax
+
+asi: false
+boss: false
+debug: false
+eqnull: true
+esnext: false
+evil: false
+funcscope: false
+gcl: false
+globalstrict: false
+iterator: false
+lastsemic: false
+laxbreak: false
+laxcomma: false
+loopfunc: false
+maxerr: 50 
+moz: false
+multistr: false
+notypeof: false
+proto: false
+scripturl: false
+smarttabs: true
+shadow: false
+sub: false
+supernew: false
+validthis: false
+noyield: false
+~~~
