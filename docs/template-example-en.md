@@ -9,16 +9,16 @@ categories: [documentation]
 
 This section will show describe how the templating engine works and the steps to customizing a module using templates. The basemap selector module with be used as an example throughout the article.
 
-<img src="images/basemap_selector_screenshot.png" alt="Basemap Selector Screenshot" title="A sample screenshot of the basemap selector menu" width="285" height="278"/>
+<img src="../assets/images/basemap_selector_screenshot.png" alt="Basemap Selector Screenshot" title="A sample screenshot of the basemap selector menu" width="285" height="278"/>
 
 ##How Templating Works
 The dropdown menu of the basemap selector is customizable through templating. The template that the basemap selector is using can be specified by editing the "basemapTemplate" field in the JSON config (currently it is using "default_basemap"). 
 
-<img src="images/basemap_template_screenshot.png" alt="Basemap Template Screenshot" title="The basemap_template field is located at the root of the configuration file" width="521" height="66"/>
+<img src="../assets/images/basemap_template_screenshot.png" alt="Basemap Template Screenshot" title="The basemap_template field is located at the root of the configuration file" width="521" height="66"/>
 
 The template uses the JSON configuration file to populate the data in each row. The "basemaps" entry in the JSON configuration file is an array of Objects, each Object describes one basemap. 
 
-<img src="images/basemap_config_screenshot.png" alt="Basemap Config Screenshot" title="The default structure of each entry in the basemap array in the JSON configuration file" width="226" height="330"/>
+<img src="../assets/images/basemap_config_screenshot.png" alt="Basemap Config Screenshot" title="The default structure of each entry in the basemap array in the JSON configuration file" width="226" height="330"/>
 
 The templating engine takes each entry in the basemap config and stores it in the data object that becomes available to the template. Below is the default template for the basemap selector, note the use of o.data to populate fields:
 
