@@ -19,7 +19,7 @@ Relevant Configuration Nodes
 : `basemaps`
 
 ##### Relevant Sequence Diagrams
-![Select A Basemap](../assets/images/select_basemap.svg)
+[Select A Basemap](../assets/images/select_basemap.svg)
 
  Relevant Template Files
 : `basemap_selector_template`
@@ -64,7 +64,7 @@ Relevant Configuration Nodes
 
 
 ##### Relevant Sequence Diagrams
-![Filter Data Sequence](../assets/images/filter_data_sequence.svg)
+[Filter Data Sequence](../assets/images/filter_data_sequence.svg)
 
  Relevant Template Files
 : `datagrid_template`
@@ -89,13 +89,9 @@ The view detail function involves generating a custom detail report (from a temp
 
 ##### Relevant Sequence Diagrams
 
-Zoom To A Feature
+[Zoom To A Feature](../assets/images/zoom_to_feature.svg)
 
-![Zoom To A Feature](../assets/images/zoom_to_feature.svg)
-
-View Feature Details
-
-![View Feature Details](../assets/images/view_feature_details.svg)
+[View Feature Details](../assets/images/view_feature_details.svg)
 
 
  Relevant Template Files
@@ -126,13 +122,9 @@ This primarily consists of clicking a feature, and hovering over a feature.  For
 
 ##### Relevant Sequence Diagrams
 
-Click a Feature
+[Click a Feature](../assets/images/click_a_feature.svg)
 
-![Click a Feature](../assets/images/click_a_feature.svg)
-
-Hover Over a Feature
-
-![Hover Over a Feature](../assets/images/hover_over_feature.svg)
+[Hover Over a Feature](../assets/images/hover_over_feature.svg)
 
 
 
@@ -157,17 +149,11 @@ The module also generates the graphic layers used to manage the highlight imager
 
 ##### Relevant Sequence Diagrams
 
-Click a Feature
+[Click a Feature](../assets/images/click_a_feature.svg)
 
-![Click a Feature](../assets/images/click_a_feature.svg)
+[Hover Over a Feature](../assets/images/hover_over_feature.svg)
 
-Hover Over a Feature
-
-![Hover Over a Feature](../assets/images/hover_over_feature.svg)
-
-Zoom to a Feature
-
-![Zoom to a Feature](../assets/images/zoom_to_feature.svg)
+[Zoom to a Feature](../assets/images/zoom_to_feature.svg)
 
 
 
@@ -203,12 +189,9 @@ Toggle A Bounding Box
 
 ![Toggle A Bounding Box](../assets/images/toggle_bounding_box.svg)
 
-Filter Data Sequence
+[Filter Data Sequence](../assets/images/filter_data_sequence.svg)
 
-![Filter Data Sequence](../assets/images/filter_data_sequence.svg)
-
-Change Map Drawing Order
-![Change Map Drawing Order](../assets/images/reorder_a_layer.svg)
+[Change Map Drawing Order](../assets/images/reorder_a_layer.svg)
 
  Relevant Template Files
 : `filter_global_template`
@@ -292,9 +275,7 @@ Relevant Configuration Nodes
 
 ##### Relevant Sequence Diagrams
 
-Filter Data Sequence
-
-![Filter Data Sequence](../assets/images/filter_data_sequence.svg)
+[Filter Data Sequence](../assets/images/filter_data_sequence.svg)
 
 
 ## ramp/maptips
@@ -313,13 +294,9 @@ Relevant Configuration Nodes
 
 ##### Relevant Sequence Diagrams
 
-Close an Anchor Tip
+[Close an Anchor Tip](../assets/images/close_anchor.svg)
 
-![Close an Anchor Tip](../assets/images/close_anchor.svg)
-
-Hover Over a Feature
-
-![Hover Over a Feature](../assets/images/hover_over_feature.svg)
+[Hover Over a Feature](../assets/images/hover_over_feature.svg)
 
 
 
