@@ -39,11 +39,11 @@ This page will walk you through the layout of the application configuration obje
 * levelOfDetails								
 	* minLevel						
 	* maxLevel						
-	* levels <collection>						
+	* levels (collection)						
 		* level				
 		* resolution				
 		* scale				
-* basemaps <collection>								
+* basemaps (collection)								
 	* id						
 	* url						
 	* thumbnail						
@@ -53,13 +53,13 @@ This page will walk you through the layout of the application configuration obje
 	* name						
 	* altText						
 	* description						
-* featureLayers <collection>								
+* featureLayers (collection)								
 	* id						
 	* displayName						
 	* url						
 	* datagrid						
 		* rowsPerPage				
-		* gridColumns <collection>				
+		* gridColumns (collection)				
 			* id		
 			* fieldName		
 			* width		
@@ -92,7 +92,7 @@ This page will walk you through the layout of the application configuration obje
 	* defaultState						
 	* summaryEnabled						
 	* extendedEnabled						
-	* extendedColumns <collection>						
+	* extendedColumns (collection)						
 		* column1				
 * siteTemplate								
 	* basemapTemplate						
@@ -100,7 +100,7 @@ This page will walk you through the layout of the application configuration obje
 	* filterRowTemplate						
 * globalFilter								
 	* txtAllData						
-	* toggleLabels <collection>						
+	* toggleLabels (collection)						
 		* id				
 		* dataAttribute				
 		* value				
