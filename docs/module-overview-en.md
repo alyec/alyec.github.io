@@ -40,11 +40,17 @@ Relevant Configuration Nodes
 ## ramp/datagrid
 
 The module handles the construction and population of the data grid. 
+
 The table structure is generated from config values.  Autopagination is provided via the [datatables](link to extensions page) library.
+
 Population of grid rows consists of determining visible features, generating column data (this includes applying templates), and filling the grid with the result set.
+
 Logic to toggle between grid states -- expand when Bill / Jack / Alex are finished
+
 Sorting -- expand when Aly has enhanced it
+
 Finding a feature in the grid -- expand when Aly has enhanced it
+
 The grid contains buttons to obtain details and zoom to row items.  This is done via the dataGridClickHandler module (see below).  In future releases, we plan to have this extensible to allow easy overriding of the controls.
 
 
@@ -72,7 +78,9 @@ Relevant Configuration Nodes
 ## ramp/datagridClickHandler
 
 The module contains the handler functions that react to buttons in the datagrid being clicked.  Primarily this covers implementation of the Details and Zoom To buttons.  In future releases we intend to have these functions easily extendable.
+
 The zoom function consists of the map zooming to the feature in question, where it will be highlighted and an anchor tip will be displayed.  
+
 The view detail function involves generating a custom detail report (from a template) and displaying it in a slide-out panel.  
 
 ##### API Page
@@ -102,6 +110,7 @@ The module defines event names as constants to avoid typing errors.
 ## ramp/featureClickHandler
 
 The module contains the handler functions that react to the mouse interacting with features on the map.
+
 This primarily consists of clicking a feature, and hovering over a feature.  For the most part, this class publishes appropriate events; the event listeners in other classes implement the reaction to the interactions.
 
 
@@ -124,7 +133,9 @@ This primarily consists of clicking a feature, and hovering over a feature.  For
 ## ramp/featureHighlighter
 
 The module implements the highlighting of features on the map during hover and selection actions.  
+
 There are three types of highlighting: Click highlighting, Zoom highlighting, and Hover highlighting.  All are acomplished by fading out the map and duplicating the feature in question in a highliting layer, shown at regular brightness above the faded items.
+
 The module also generates the graphic layers used to manage the highlight imagery
 
 
@@ -148,7 +159,9 @@ The module also generates the graphic layers used to manage the highlight imager
 ## ramp/filterManager
 
 The module implements the generation of the filter control, and implements the filtering. 
+
 There is only layer-level filtering in the Arctic Fox version of RAMP. I.e. a layer can be on or off.  Future versions plan to include more granular filtering, such as by-attribute filters.
+
 The following actions are performed by the module
 
 * Generate the filter interface (including using templates)
@@ -213,8 +226,11 @@ Relevant Configuration Nodes
 ## ramp/gui
 
 Contains the gui related logic for the app.
+
 Has a subpanel prototype.  This defines properties, constructor / destructor, open/close animation methods, content update.
+
 Implements the side panel, help popup, add layer popup and registers those panels.
+
 Contains logic to go to full-screen mode.
 
 
@@ -230,6 +246,7 @@ Relevant Configuration Nodes
 ## ramp/map
 
 The map module generates the map control and adds layers to the map, as defined in the configuration.
+
 It also generates and hosts the scale bar.
 
 
@@ -257,6 +274,7 @@ Relevant Configuration Nodes
 ## ramp/maptips
 
 The module handles maptip interaction (both hover and anchor). Includes positioning logic for tips.
+
 Fills the tips with contents from the template.
 
 
@@ -281,6 +299,7 @@ Relevant Configuration Nodes
 ## ramp/navigation
 
 The module handles the navigation widget.  It constructs it and applies a CSS skin to it.  
+
 Also handles the two-way synchronization between the map extent and the widget state.
 
 
@@ -296,9 +315,11 @@ Relevant Configuration Nodes
 ## ramp/quickzoom
 
 Quick zoom widget is populated with target items, will zoom the map when an item is selected
+
 THIS ITEM IS UNDER CONSIDERATION FOR COMPLETE OVERHAUL
 
 NOTE: Depends on one of our quickzoom services.  These will be on public production after 10.1 migration.
+
 NOTE: our current config file does not have the appropriate node.  We should add this to the sample
 
 

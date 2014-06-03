@@ -11,7 +11,7 @@ categories: [documentation]
 
 RAMP templating uses the [JavaScript Templates engine by BlueImp](https://github.com/blueimp/JavaScript-Templates).  
 
-The library resides in RAMP at /javascript/libs/tmplEx.js, and should be loaded in the main html page.
+The library resides in RAMP at /src/js/libs/tmplEx.2.4.1/tmplEx.js, and should be loaded in the main html page.
 
 The library has been modified from its original form.  It has been enhanced to allow the loading of JSON files that contain multiple template definitions.
 
@@ -51,12 +51,12 @@ Comments can be added to the files to improve readability.  Both // and /* */ fo
 }
 ~~~
 
-Be careful not to put comments inside the template strings, as they will be included in the template and look funny.
+Be careful not to put comments inside the template strings, as they will be included in the template output and look funny.
 
 
 ### Simple Value Replacement
 
-The template references a data object called o.  The value of o is the data object supplied to the template engine when it is called.  Using the embedded value tags {{ "{%= " }} %} we can reference the object and have the value appear in the template output.  E.g. this template will output a hyperlink based on the values in the data object.  The data object must have properties .url and .text to work.
+The template references a data object called __o__.  The value of __o__ is the data object supplied to the template engine when it is called.  Using the embedded value tags {{ "{%= " }} %} we can reference the object and have the value appear in the template output.  E.g. this template will output a hyperlink based on the values in the data object.  The data object must have properties .url and .text to work.
 
 ~~~
 {% raw %}{
@@ -114,7 +114,7 @@ The template can also include embedded javascript to help construct more complex
                 {% for (var prop in o ) { 
                     if (o.hasOwnProperty(prop)) { 
                            include('simpleListItem', 
-                           {key: prop, value: o[prop]}); 
+                                   {key: prop, value: o[prop]}); 
                     }
                 } %}
             </ul>
@@ -158,7 +158,7 @@ result = tmpl("myTemplateName", oDataObject)
                 {% for (var prop in o ) { 
                     if (o.hasOwnProperty(prop)) { 
                            include('simpleListItem', 
-                            {key: prop, value: o[prop]}); 
+                                   {key: prop, value: o[prop]}); 
                     }
                 } %}
             </ul>
