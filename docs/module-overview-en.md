@@ -185,9 +185,7 @@ Relevant Configuration Nodes
 
 ##### Relevant Sequence Diagrams
 
-Toggle A Bounding Box
-
-![Toggle A Bounding Box](../assets/images/toggle_bounding_box.svg)
+[Toggle A Bounding Box](../assets/images/toggle_bounding_box.svg)
 
 [Filter Data Sequence](../assets/images/filter_data_sequence.svg)
 
