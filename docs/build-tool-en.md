@@ -118,19 +118,19 @@ $ grunt bump:build
 #### cleanAll
 Removes all temporary and build folders:
 
-* ECDMP/javascript/build
-* ECDMP/javascript/lib
-* ECDMP/javascript/lib/_temp
-* ECDMP/css/build
-* ECDMP/css/lib
-* ECDMP/css/build/_temp
-* ECDMP/css/lib/_temp
-* ECDMP/css/src/**/*.pref.css
-* ECDMP/css/src/**/*.less.css (except for *.less.pref.css)
-* ECDMP/css/src/**/*.min.css
-* ECDMP/map.html and ECDMP/carte.html
-* ECDMP/docs/docco
-* ECDMP/docs/yuidoc
+* RAMP/javascript/build
+* RAMP/javascript/lib
+* RAMP/javascript/lib/_temp
+* RAMP/css/build
+* RAMP/css/lib
+* RAMP/css/build/_temp
+* RAMP/css/lib/_temp
+* RAMP/css/src/**/*.pref.css
+* RAMP/css/src/**/*.less.css (except for *.less.pref.css)
+* RAMP/css/src/**/*.min.css
+* RAMP/map.html and RAMP/carte.html
+* RAMP/docs/docco
+* RAMP/docs/yuidoc
 
 Use the following to run this task:
 
