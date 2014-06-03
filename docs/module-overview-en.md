@@ -19,7 +19,7 @@ Relevant Configuration Nodes
 : `basemaps`
 
 ##### Relevant Sequence Diagrams
-[Select A Basemap]!(../assets/images/select_basemap.svg)
+![Select A Basemap](../assets/images/select_basemap.svg)
 
  Relevant Template Files
 : `basemap_selector_template`
@@ -64,7 +64,7 @@ Relevant Configuration Nodes
 
 
 ##### Relevant Sequence Diagrams
-[Filter Data Sequence]!(../assets/images/filter_data_sequence.svg)
+![Filter Data Sequence](../assets/images/filter_data_sequence.svg)
 
  Relevant Template Files
 : `datagrid_template`
