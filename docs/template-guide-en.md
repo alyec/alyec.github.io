@@ -177,7 +177,7 @@ result = tmpl("myTemplateName", oDataObject)
 
 We assume the main page has included the Templating javascript library.
 
-~~~
+~~~ javascript
 define([
     "utils/tmplHelper",
     "dojo/text!./templates/sample_template.json"],
@@ -205,8 +205,8 @@ function (tmplHelper, sample_template) { return {
 
 ### Result
 
-~~~
-<div>
+~~~ 
+{% highlight html %}<div>
     <ul>
         <li>
             <p>user</p><p>HappyDuck</p>
@@ -215,7 +215,7 @@ function (tmplHelper, sample_template) { return {
             <p>pwd</p><p>QUACK</p>
         </li>
     </ul>
-</div>
+</div>{% end highlight %}
 ~~~
 
 ## Template Files
