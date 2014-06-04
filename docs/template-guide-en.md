@@ -206,7 +206,8 @@ function (tmplHelper, sample_template) { return {
 ### Result
 
 ~~~ 
-{% highlight html %}<div>
+{% highlight html %}
+<div>
     <ul>
         <li>
             <p>user</p><p>HappyDuck</p>
@@ -215,7 +216,8 @@ function (tmplHelper, sample_template) { return {
             <p>pwd</p><p>QUACK</p>
         </li>
     </ul>
-</div>{% end highlight %}
+</div>
+{% end highlight %}
 ~~~
 
 ## Template Files
