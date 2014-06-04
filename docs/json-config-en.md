@@ -143,7 +143,7 @@ This page will walk you through the layout of the application configuration obje
 | levelOfDetails.levels[].level	| numeric	| ID for each level
 | levelOfDetails.levels[].resolution	| numeric	| Resolution in map units of each pixel in a tile for each level
 | levelOfDetails.levels[].scale	| numeric	| Scale for each level
-| basemaps	| collection of map items	| order of collection will determine order they are added to the map.  can be empty.  if more than one entry, basemap selector widget could/(should?) initialize.
+| <a name="basemaps"/> basemaps	| collection of map items	| order of collection will determine order they are added to the map.  can be empty.  if more than one entry, basemap selector widget could/(should?) initialize.
 | basemaps[].id	| string	| to identify layer.  unique across all map items.  no spaces!  use this to derive language based strings from stringResources (e.g. text to go in basemap selector would have a key like "basemapName<id>")
 | basemaps[].url	| string	| REST url of the basemap
 | basemaps[].thumbnail	| string	| path to image file for use in basemap selector (optional)
@@ -166,13 +166,13 @@ This page will walk you through the layout of the application configuration obje
 | featureLayers[].datagrid.gridColumns [].sortType	| string	| not sure what goes here.  text/number/date sort?
 | featureLayers[].datagrid.gridColumns [].alignment	| string	| alignment type.  use values from current services
 | featureLayers[].datagrid.gridColumns [].title	| Int	| Title of the grid column.  This will show in the grid header
-| featureLayers[].datagrid.gridColumns [].columnTemplate	| 	| Template name to be used to generate the content of the given column
-| featureLayers[].datagrid.summaryRowTemplate	| 	| Summary row template name to be used to generate content
+| <a name="featurelayers_datagrid_gridcolumns_columntemplate" />featureLayers[].datagrid.gridColumns [].columnTemplate	| 	| Template name to be used to generate the content of the given column
+| <a name="featurelayers_datagrid_summaryrowtemplate" />featureLayers[].datagrid.summaryRowTemplate	| 	| Summary row template name to be used to generate content
 | featureLayers[].layerAttributes	| string	| An array of strings which correspond to fields to include in the FeatureLayer. If not specified, the feature layer will return the OBJECTID field and if applicable the start time field, end time field and type id field. You can specify ["*"] to fetch the values for all fields in the layer, this is useful when editing features. Associated with outfield options in ESRI FeatureLayer.
 | featureLayers[].filter	| 	| 
 | featureLayers[].mapTipSettings	| 	| 
-| featureLayers[].mapTipSettings.hoverTemplating	| string	| has template of what to show in hover tip.  if blank, hover tips are not initialized.  template processor should be able to generate text, as well as derive image names from feature attributes
-| featureLayers[].mapTipSettings.anchorTemplate	| string	| Template name used to generate anchored map tip
+| <a name="featurelayers_maptipsettings_hovertemplate" /> featureLayers[].mapTipSettings.hoverTemplating	| string	| has template of what to show in hover tip.  if blank, hover tips are not initialized.  template processor should be able to generate text, as well as derive image names from feature attributes
+| <a name="featurelayers_maptipsettings_anchortemplate" />featureLayers[].mapTipSettings.anchorTemplate	| string	| Template name used to generate anchored map tip
 | featureLayers[].symbology	| 	| 
 | featureLayers[].symbology.renderer	| 	| 
 | featureLayers[].symbology.renderer.type	| string	| The type of renderer being used on the layer.  Current supported values are "simple" and "unique"
@@ -183,7 +183,7 @@ This page will walk you through the layout of the application configuration obje
 | featureLayers[].symbology.icons[].default.imageUrl	| string	| Url to symbology image
 | featureLayers[].symbology.icons[].default.legendText	| string	| Legend text for the given symbology
 | featureLayers[].uuid	| string	| Feature layer UUID
-| featureLayers[].detailTemplate	| string	| Template used to generate detail content of a selected feature
+| <a name="featurelayers_detailtemplate" /> featureLayers[].detailTemplate	| string	| Template used to generate detail content of a selected feature
 | featureLayers[].nameField	| string	| Field to be used to describe a feature.  Utilized in summary grid, detail content, map tip, and anchored maptip
 | datagrid	| 	| 
 | datagrid.globalGridRowsPerPage	| numeric	| Number of rows per page to be displayed in datagrid in summary view
@@ -192,10 +192,10 @@ This page will walk you through the layout of the application configuration obje
 | datagrid.extendedEnabled	| boolean	| Flag indicate extended grid is enabled
 | datagrid.extendedColumns[]	| collections	| Column definition for extended datagrid
 | siteTemplate	| 	| 
-| siteTemplate.basemapTemplate	| string	| The JSON template for each entry in the basemap selector (defaults to name of map and a thumbnail)
-| siteTemplate.filterGlobalRowTemplate	| string	| Template for
-| siteTemplate.filterRowTemplate	| string	| Filter template used to generate filter content for map layers.
-| globalFilter	| 	| 
+| <a name="sitetemplate_basemaptemplate" /> siteTemplate.basemapTemplate 	| string	| The JSON template for each entry in the basemap selector (defaults to name of map and a thumbnail)
+| <a name="sitetemplate_filterglobalrowtemplate" />siteTemplate.filterGlobalRowTemplate	| string	| Template for
+| <a name="sitetemplate_filterrowtemplate" />siteTemplate.filterRowTemplate	| string	| Filter template used to generate filter content for map layers.
+| <a name="globalfilter" /> globalFilter	| 	| 
 | globalFilter.txtAllData	| string	| Global filter text for All Data
 | globalFilter.toggleLabel	| <collection>	| Attributes and settings for individual toggle in the global section of filter manager
 | globalFilter.toggleLabel[].id	| string	| Id of the toggle label
