@@ -217,7 +217,7 @@ function (tmplHelper, sample_template) { return {
         </li>
     </ul>
 </div>
-{% end highlight %}
+{% endhighlight %}
 ~~~
 
 ## Template Files
