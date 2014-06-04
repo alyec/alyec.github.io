@@ -1,8 +1,11 @@
 ---
-layout: index-en
+layout: "index-en"
 title: Build Tool
-categories: [documentation]
+categories: 
+  - documentation
+published: true
 ---
+
 {% include JB/setup %}
 
 # Build Tool Setup
@@ -10,7 +13,7 @@ categories: [documentation]
 ## Dependencies
 The build tool uses [Grunt](http://gruntjs.com/) for automation of linting, minifying, concatenating and other magical things we do with our JS and CSS files.
 
-To install Grunt on Windows, you first need to install [Node.js](http://nodejs.org/)  and [Git](http://msysgit.github.io/) binary, and then you can use the command prompt or PowerShell to run Grunt tasks.
+To install Grunt on Windows, you first need to install [Node.js](http://nodejs.org/) and [Git](http://msysgit.github.io/) binary, and then you can use the command prompt or PowerShell to run Grunt tasks.
 
 * Node.js [installer](http://nodejs.org/#download)
 * msysGit [installer](http://code.google.com/p/msysgit/downloads/list?q=full+installer+official+git)
@@ -30,8 +33,8 @@ The build tool is just a Grunt project set up to automate the processing of the 
 
 The Build tool can also
 
-* monitor __*.less__ files in __RAMP/css/src__ for changes and autoconvert them to css – very handy since you don’t have to run the build tool manually see changes; see _wcss_ task;
-* monitor __*.js__ files in __RAMP/javascript/src/RAMP__ for changes and run [JSHint](http://www.jshint.com/) on the modified file – very handy since you can avoid silly JavaScript errors; see _wjs_ task;
+* monitor __*.less__ files in __RAMP/src/css/__ for changes and autoconvert them to css – very handy since you don’t have to run the build tool manually to see changes; see _wcss_ task;
+* monitor __*.js__ files in __RAMP/src/js/RAMP/__ for changes and run [JSHint](http://www.jshint.com/) on the modified file – very handy since you can avoid silly JavaScript errors; see _wjs_ task; additionaly, it can also reminify JS files after each change - see _wjse_ taks;
 
 ### Structure
 There are two files required to configure and run the build tool: __package.json__ and __Gruntfile__. They resided in __RAMP__ at the root level.
@@ -387,4 +390,3 @@ Aborted due to warnings.
 ~~~
 
 The CSS file __ramp.less.pref.css__ has to be updated every time you change __.less__ source and want to see these changes; since is __ramp.less.pref.css__ needed to run RAMP even in development mode, it’s checked into TFS and you need to explicitly check it out so the build tool can modify it.
-
