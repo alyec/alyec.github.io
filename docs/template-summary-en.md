@@ -5,6 +5,8 @@ categories: [documentation]
 ---
 {% include JB/setup %}
 
+<a name="top" />
+
 #Template Overview
 
 Below is all the modules that are customizable through templating. This summarizes all the information the developers need in order to customize each module through templating. For details on how templating works, refer to this [guide](template-guide-en.html). For an example of modifying a module through templating, refer to this [guide](template-example-en.html).
@@ -36,6 +38,8 @@ basemap_selector_template.json
 
 <a href="json-config-en.html#basemaps">config.basemaps[i]</a>
 
+[Back To Top](#top)
+
 ###Datagrid Summary Mode
 
 <img src="../assets/images/datagrid_summary_screenshot.png" width="249" height="92" />
@@ -54,6 +58,8 @@ datagrid_template.json
 
 The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.html"> Graphic object</a> associated with that point
 
+[Back To Top](#top)
+
 ###Datagrid Expanded Mode
 
 Each row in the datagrid when the datagrid is the expanded mode
@@ -71,7 +77,9 @@ extended_datagrid_template.json
 **Data Object**
 
 The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.html"> Graphic object</a> associated with that point
-	
+
+[Back To Top](#top)
+
 ###Feature Anchor Tip
 
 The popup that appears when a feature on the map is clicked.
@@ -89,7 +97,9 @@ feature_anchortip_template.json
 **Data Object**
 
 The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.html"> Graphic object</a> associated with that point
-		
+
+[Back To Top](#top)
+
 ###Feature Hover Tip
 
 The popup that appears when the mouse hovers over a feature on the map.
@@ -116,6 +126,8 @@ The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.htm
 		<td></td>
 		<td></td>
 	</tr>
+
+[Back To Top](#top)
 	
 ###Feature Details Panel
 
@@ -135,6 +147,8 @@ feature_details_template.json
 
 The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.html"> Graphic object</a> associated with that point
 
+[Back To Top](#top)
+
 ###Filter Global Row
 
 The top row that contain the global layer and bounding box toggles
@@ -152,7 +166,9 @@ filter_global_template.json
 **Data Object**
 
 <a href="json-config-en.html#globalfilter">config.globalFilter</a>
-	
+
+[Back To Top](#top)
+
 ###Filter Row
 
 Each row in the filter manager
@@ -170,3 +186,5 @@ filter_row_template.json
 **Data Object**
 
 ?
+
+[Back To Top](#top)
