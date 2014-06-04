@@ -1,13 +1,25 @@
 ---
 layout: index-en
-title: RAMP Architecture Overview
+title: Architecture Overview
 categories: [documentation]
 ---
 {% include JB/setup %}
 
 ## Scope and Exclusions
 
-Add appropriate content here
+The architecture overview covers how various components of RAMP work together and accomplish the functions that are provided out-of-the-box.  In particular, it covers the functions that reside in the RAMP codebase, but not functions that are provided from 3rd party libraries.
+
+For information on how to use and configure RAMP, please see the [Getting Started](started-en.html) and [User Guide](ramp-customization-intro-en.html) pages.
+
+We do not delve into the inner workings of the DOJO API.  A wealth of information can be found on the [DOJO](http://dojotoolkit.org/) site.
+
+The inner workings and usage of the ESRI Javascript API are not covered.  The [official site](https://developers.arcgis.com/javascript/) offers articles, samples, and a detailed API reference.
+
+A list of [extensions](external-libraries-en.html) is provided, but details of their inner workings and usage will be found on their homepages (links provided).
+
+Details on how to use [ArcGIS Server](http://www.esri.com/software/arcgis/arcgisserver) and publish spatial data as services is not covered.  
+
+While RAMP meets [WCAG 2.0](http://www.w3.org/WAI/WCAG20/quickref/) AA compliance, we do not cover the details in meeting those requirements.  
 
 ## Terminology
 
