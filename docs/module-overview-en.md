@@ -9,7 +9,7 @@ categories: [documentation]
 
 # RAMP Module Overview {#wb-cont}
 
-## Table of Content
+## Quick Links
 
 [ramp/basemapSelector](#basemapselector)
 

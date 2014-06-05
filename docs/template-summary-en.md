@@ -11,16 +11,34 @@ categories: [documentation]
 
 Below is all the modules that are customizable through templating. This summarizes all the information the developers need in order to customize each module through templating. For details on how templating works, refer to this [guide](template-guide-en.html). For an example of modifying a module through templating, refer to this [guide](template-example-en.html).
 
-##Header Description
+###Quick Links
+
+[Header Description](#header_description)
+
+[Basemap Selector](#basemap_selector)
+
+[Datagrid Summary Mode](#datagrid_summary_mode)
+
+[Datagrid Expanded Mode](#datagrid_expanded_mode)
+
+[Feature Hover Tip](#feature_hover_tip)
+
+[Feature Details Panel](#feature_details_panel)
+
+[Feature Anchor Tip](#feature_anchor_tip)
+
+[Filter Global Row](#filter_global_row)
+
+[Filter Row](#filter_row)
+
+###Header Description {#header_description}
 
 Description - a description of what the template modifies\\
 Template Name - the path in the JSON configuration file containing the name of the template. Each new line denotes the next child in the path.\\
 Template File - the template file containing the template, all files reside in the "RAMP/modules/templates" folder\\
 Data object - a description of the data object (o.data) that gets passed into the template
 
-##Overview
-
-###Basemap Selector
+###Basemap Selector {#basemap_selector}
 
 **Sample Screenshot**
 
@@ -46,7 +64,7 @@ basemap_selector_template.json
 
 [Back To Top](#top)
 
-###Datagrid Summary Mode
+###Datagrid Summary Mode {#datagrid_summary_mode}
 
 **Sample Screenshot**
 
@@ -72,7 +90,7 @@ The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.htm
 
 [Back To Top](#top)
 
-###Datagrid Expanded Mode
+###Datagrid Expanded Mode {#datagrid_expanded_mode}
 
 Each row in the datagrid when the datagrid is the expanded mode
 
@@ -98,7 +116,7 @@ The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.htm
 
 [Back To Top](#top)
 
-###Feature Anchor Tip
+###Feature Anchor Tip {#feature_anchor_tip}
 
 The popup that appears when a feature on the map is clicked.
 
@@ -124,7 +142,7 @@ The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.htm
 
 [Back To Top](#top)
 
-###Feature Hover Tip
+###Feature Hover Tip {#feature_hover_tip}
 
 The popup that appears when the mouse hovers over a feature on the map.
 
@@ -150,7 +168,7 @@ The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.htm
 
 [Back To Top](#top)
 	
-###Feature Details Panel
+###Feature Details Panel {#feature_details_panel}
 
 The content of the detail panel that slides out whenever a user clicks on a feature on the map or selects a feature from the datagrid.
 
@@ -176,7 +194,7 @@ The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.htm
 
 [Back To Top](#top)
 
-###Filter Global Row
+###Filter Global Row {#filter_global_row}
 
 The top row that contain the global layer and bounding box toggles
 
@@ -202,7 +220,7 @@ filter_global_template.json
 
 [Back To Top](#top)
 
-###Filter Row
+###Filter Row {#filter_row}
 
 Each row in the filter manager
 
