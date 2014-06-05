@@ -52,7 +52,7 @@ Each row in the basemap selector dropdown.
 
 **Template Name**
 
-[siteTemplate.basemapTemplate] ("json-config-en.html#sitetemplate_basemaptemplate")
+[siteTemplate.basemapTemplate]("json-config-en.html#sitetemplate_basemaptemplate")
 
 **Template File**
 

@@ -50,22 +50,30 @@ Manages the widget that allows the user to change the basemap. Utilizes the [esr
 ##### API Page
 [BaseMapSelector](../api/yuidoc/classes/BaseMapSelector.html)
 
-
 Relevant Configuration Nodes
 : `basemaps`
 
 ##### Relevant Sequence Diagrams
-![Select A Basemap](../assets/images/select_basemap.svg)
+<section class="wb-lbx lbx-gal">	
+	<a href="../assets/images/select_basemap.svg">
+		<img src="../assets/images/select_basemap.svg" max-width="80%" />
+	</a>
+</section>
+
+![Select A Basemap]()
 
  Relevant Template Files
 : `basemap_selector_template`
 
 [Back To Top](#top)
 
+
+
+
+
 ## ramp/bookmarkLink {#bookmarklink}
 
 Manages the widget that allows the maps current state to be displayed as a URL.  Listens for specific site events and updates the link as they occur.  Allows emailing of link, url shortning of link.
-
 
 ##### API Page
 [BookmarkLink](../api/yuidoc/classes/BookmarkLink.html)
@@ -74,6 +82,10 @@ Relevant Configuration Nodes
 : `lang`
 
 [Back To Top](#top)
+
+
+
+
 
 ## ramp/datagrid {#datagrid}
 
@@ -91,8 +103,8 @@ Finding a feature in the grid -- expand when Aly has enhanced it
 
 The grid contains buttons to obtain details and zoom to row items.  This is done via the dataGridClickHandler module (see below).  In future releases, we plan to have this extensible to allow easy overriding of the controls.
 
-
 ##### API Page
+
 [Datagrid](../api/yuidoc/classes/Datagrid.html)
 
 Relevant Configuration Nodes
@@ -102,16 +114,22 @@ Relevant Configuration Nodes
 
 
 ##### Relevant Sequence Diagrams
-![Filter Data Sequence](../assets/images/filter_data_sequence.svg)
+
+<section class="wb-lbx lbx-gal">	
+	<a href="../assets/images/filter_data_sequence.svg">
+		<img src="../assets/images/filter_data_sequence.svg" max-width="80%" />
+	</a>
+</section>
 
  Relevant Template Files
 : `datagrid_template`
 : `extended_datagrid_template`
 
-
-
-
 [Back To Top](#top)
+
+
+
+
 
 ## ramp/datagridClickHandler {#datagridclickhandler}
 
@@ -124,18 +142,28 @@ The view detail function involves generating a custom detail report (from a temp
 ##### API Page
 [DatagridClickHandler](../api/yuidoc/classes/DatagridClickHandler.html)
 
-
 ##### Relevant Sequence Diagrams
 
-![Zoom To A Feature](../assets/images/zoom_to_feature.svg)
+<section class="wb-lbx lbx-gal">	
+	<a href="../assets/images/zoom_to_feature.svg">
+		<img src="../assets/images/zoom_to_feature.svg" max-width="80%" />
+	</a>
+</section>
 
-![View Feature Details](../assets/images/view_feature_details.svg)
-
+<section class="wb-lbx lbx-gal">	
+	<a href="../assets/images/view_feature_details.svg">
+		<img src="../assets/images/view_feature_details.svg" max-width="80%" />
+	</a>
+</section>
 
  Relevant Template Files
 : `feature_details_template`
 
 [Back To Top](#top)
+
+
+
+
 
 ## ramp/eventManager {#eventmanager}
 
@@ -144,8 +172,11 @@ The module defines event names as constants to avoid typing errors.
 ##### API Page
 [EventManager](../api/yuidoc/classes/EventManager.html)
 
-
 [Back To Top](#top)
+
+
+
+
 
 ## ramp/featureClickHandler {#featureclickhandler}
 
@@ -153,23 +184,28 @@ The module contains the handler functions that react to the mouse interacting wi
 
 This primarily consists of clicking a feature, and hovering over a feature.  For the most part, this class publishes appropriate events; the event listeners in other classes implement the reaction to the interactions.
 
-
 ##### API Page
 [FeatureClickHandler](../api/yuidoc/classes/FeatureClickHandler.html)
 
-
-
 ##### Relevant Sequence Diagrams
 
-![Click a Feature](../assets/images/click_a_feature.svg)
+<section class="wb-lbx lbx-gal">	
+	<a href="../assets/images/click_a_feature.svg">
+		<img src="../assets/images/click_a_feature.svg" max-width="80%" />
+	</a>
+</section>
 
-![Hover Over a Feature](../assets/images/hover_over_feature.svg)
-
-
-
-
+<section class="wb-lbx lbx-gal">	
+	<a href="../assets/images/hover_over_feature.svg">
+		<img src="../assets/images/hover_over_feature.svg" max-width="80%" />
+	</a>
+</section>
 
 [Back To Top](#top)
+
+
+
+
 
 ## ramp/featureHighlighter {#featurehighlighter}
 
@@ -179,24 +215,35 @@ There are three types of highlighting: Click highlighting, Zoom highlighting, an
 
 The module also generates the graphic layers used to manage the highlight imagery
 
-
-
 ##### API Page
 [FeatureHighlighter](../api/yuidoc/classes/FeatureHighlighter.html)
 
-
-
 ##### Relevant Sequence Diagrams
 
-![Click a Feature](../assets/images/click_a_feature.svg)
+<section class="wb-lbx lbx-gal">	
+	<a href="../assets/images/click_a_feature.svg">
+		<img src="../assets/images/click_a_feature.svg" alt="Click a Feature" max-width="80%" />
+	</a>
+</section>
 
-![Hover Over a Feature](../assets/images/hover_over_feature.svg)
+<section class="wb-lbx lbx-gal">	
+	<a href="../assets/images/hover_over_feature.svg">
+		<img src="../assets/images/hover_over_feature.svg" alt="Hover Over a Feature" max-width="80%" />
+	</a>
+</section>
 
-![Zoom to a Feature](../assets/images/zoom_to_feature.svg)
-
-
+<section class="wb-lbx lbx-gal">	
+	<a href="../assets/images/zoom_to_feature.svg">
+		<img src="../assets/images/zoom_to_feature.svg" alt="Zoom to a Feature" max-width="80%" />
+	</a>
+</section>
 
 [Back To Top](#top)
+
+
+
+
+
 
 ## ramp/filterManager {#filtermanager}
 
@@ -211,8 +258,6 @@ The following actions are performed by the module
 * Handle the toggling of bounding boxes for layers
 * Changing the draw order of layers on the map
 
-
-
 ##### API Page
 [FilterManager](../api/yuidoc/classes/FilterManager.html)
 
@@ -221,36 +266,50 @@ Relevant Configuration Nodes
 : `featureLayers[].displayName`
 : `featureLayers[].symbology`
 
-
 ##### Relevant Sequence Diagrams
 
-![Toggle A Bounding Box](../assets/images/toggle_bounding_box.svg)
+<section class="wb-lbx lbx-gal">	
+	<a href="../assets/images/toggle_bounding_box.svg">
+		<img src="../assets/images/toggle_bounding_box.svg" alt="Toggle A Bounding Box" max-width="80%" />
+	</a>
+</section>
 
-![Filter Data Sequence](../assets/images/filter_data_sequence.svg)
+<section class="wb-lbx lbx-gal">	
+	<a href="../assets/images/filter_data_sequence.svg">
+		<img src="../assets/images/filter_data_sequence.svg" alt="Filter Data Sequence" max-width="80%" />
+	</a>
+</section>
 
-![Change Map Drawing Order](../assets/images/reorder_a_layer.svg)
+<section class="wb-lbx lbx-gal">	
+	<a href="../assets/images/reorder_a_layer.svg">
+		<img src="../assets/images/reorder_a_layer.svg" alt="Change Map Drawing Order" max-width="80%" />
+	</a>
+</section>
 
  Relevant Template Files
 : `filter_global_template`
 : `filter_row_template`
 
-
-
-
 [Back To Top](#top)
+
+
+
+
+
 
 ## ramp/globalStorage {#globalstorage}
 
 The module defines global items to make things easier to share across modules.  We place location specific string here (e.g. a configuration server URL), so this servers as the spot to tweak when moving the application to a different environment.  Implementers can also add items to this module on the fly.
 
-
 ##### API Page
 [GlobalStorage](../api/yuidoc/classes/GlobalStorage.html)
 
-
-
-
 [Back To Top](#top)
+
+
+
+
+
 
 ## ramp/graphicExtension {#graphicextension}
 
@@ -263,8 +322,12 @@ The module contains helper functions for [graphic](https://developers.arcgis.com
 Relevant Configuration Nodes
 : `featureLayers[].detailTemplate`
 
-
 [Back To Top](#top)
+
+
+
+
+
 
 ## ramp/gui {#gui}
 
@@ -276,23 +339,23 @@ Implements the side panel, help popup, add layer popup and registers those panel
 
 Contains logic to go to full-screen mode.
 
-
 ##### API Page
 [GUI](../api/yuidoc/classes/GUI.html)
 
 Relevant Configuration Nodes
 : `stringResources`
 
-
 [Back To Top](#top)
+
+
+
+
 
 ## ramp/map {#map}
 
 The map module generates the map control and adds layers to the map, as defined in the configuration.
 
 It also generates and hosts the scale bar.
-
-
 
 ##### API Page
 [Map](../api/yuidoc/classes/Map.html)
@@ -308,16 +371,18 @@ Relevant Configuration Nodes
 : `levelOfDetails.maxLevel`
 : `spatialReference`
 
-
-
 ##### Relevant Sequence Diagrams
 
-![Filter Data Sequence](../assets/images/filter_data_sequence.svg)
-
-
-
+<section class="wb-lbx lbx-gal">	
+	<a href="../assets/images/filter_data_sequence.svg">
+		<img src="../assets/images/filter_data_sequence.svg" alt="Filter Data Sequence" max-width="80%" />
+	</a>
+</section>
 
 [Back To Top](#top)
+
+
+
 
 ## ramp/maptips {#maptips}
 
@@ -335,17 +400,27 @@ Relevant Configuration Nodes
 
 ##### Relevant Sequence Diagrams
 
-![Close an Anchor Tip](../assets/images/close_anchor.svg)
+<section class="wb-lbx lbx-gal">	
+	<a href="../assets/images/close_anchor.svg">
+		<img src="../assets/images/close_anchor.svg" alt="Close an Anchor Tip" max-width="80%" />
+	</a>
+</section>
 
-![Hover Over a Feature](../assets/images/hover_over_feature.svg)
-
+<section class="wb-lbx lbx-gal">	
+	<a href="../assets/images/hover_over_feature.svg">
+		<img src="../assets/images/hover_over_feature.svg" alt="Hover Over a Feature" max-width="80%" />
+	</a>
+</section>
 
  Relevant Template Files
 : `feature_hovertip_template`
 : `feature_anchortip_template`
 
-
 [Back To Top](#top)
+
+
+
+
 
 ## ramp/navigation {#navigationmodule}
 
@@ -360,9 +435,11 @@ Also handles the two-way synchronization between the map extent and the widget s
 Relevant Configuration Nodes
 : `navWidget`
 
-
-
 [Back To Top](#top)
+
+
+
+
 
 ## ramp/quickzoom {#quickzoom}
 
@@ -374,16 +451,17 @@ NOTE: Depends on one of our quickzoom services.  These will be on public product
 
 NOTE: our current config file does not have the appropriate node.  We should add this to the sample
 
-
-
 ##### API Page
 [QuickZoom](../api/yuidoc/classes/QuickZoom.html)
 
 Relevant Configuration Nodes
 : `quickzoom`
 
-
 [Back To Top](#top)
+
+
+
+
 
 ## ramp/ramp {#ramp}
 
