@@ -1,10 +1,12 @@
 ---
-layout: index-en
-title: Documentation - ToC
+layout: "index-en"
+title: "Documentation - ToC"
+published: true
 ---
+
 {% include JB/setup %}
 
-# Documentation
+# Documentation {#wb-cont}
 
 * [Getting Started]({{site.production_url}}\docs\started-en.html)
 * [Customization Introduction]({{site.production_url}}\docs\ramp-customization-intro-en.html)
