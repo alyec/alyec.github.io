@@ -5,7 +5,7 @@ categories: [documentation]
 ---
 {% include JB/setup %}
 
-# RAMP Templating Guide
+# RAMP Templating Guide {#wb-cont}
 
 ## Libraries
 

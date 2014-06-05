@@ -8,7 +8,7 @@ published: true
 
 {% include JB/setup %}
 
-# Build Tool Setup
+# Build Tool Setup {#wb-cont}
 
 ## Dependencies
 The build tool uses [Grunt](http://gruntjs.com/) for automation of linting, minifying, concatenating and other magical things we do with our JS and CSS files.

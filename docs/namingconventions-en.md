@@ -5,7 +5,7 @@ categories: [documentation]
 ---
 {% include JB/setup %}
 
-# RAMP Naming Conventions
+# RAMP Naming Conventions {#wb-cont}
 
 Resource dictionary 
 : a singleton object that only contain read-only fields (in C# or Java, these would be classes that cannot be instantiated and only contain public static fields)

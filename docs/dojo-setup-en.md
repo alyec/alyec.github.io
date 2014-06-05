@@ -5,7 +5,7 @@ categories: [documentation]
 ---
 {% include JB/setup %}
 
-# Initialization
+# Initialization {#wb-cont}
 
 ## Loading Dojo and ESRI
 

@@ -5,7 +5,7 @@ categories: [documentation]
 ---
 {% include JB/setup %}
 
-# Getting Started
+# Getting Started {#wb-cont}
 
 ## I want to start using RAMP
 1. [Setup Build Tool]({{ BASE_PATH }}/docs/build-tool-en.html) for your platform.

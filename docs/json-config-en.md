@@ -3,7 +3,7 @@ layout: index-en
 title: JSON Config Definition
 categories: [documentation]
 ---
-# JSON Config Definition
+# JSON Config Definition {#wb-cont}
 
 This page will walk you through the layout of the application configuration object and all of its properties.
 

@@ -5,7 +5,7 @@ categories: [documentation]
 ---
 {% include JB/setup %}
 
-#RAMP Customization Introduction
+#RAMP Customization Introduction {#wb-cont}
 
 Each visible module in RAMP can be customized either through the JSON configuration file or through templating.
 

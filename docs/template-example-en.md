@@ -5,7 +5,7 @@ categories: [documentation]
 ---
 {% include JB/setup %}
 
-#Templating Example
+#Templating Example {#wb-cont}
 
 This section will show describe how the templating engine works and the steps to customizing a module using templates. The basemap selector module with be used as an example throughout the article.
 
