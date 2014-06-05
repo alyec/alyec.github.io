@@ -5,6 +5,8 @@ categories: [documentation]
 ---
 {% include JB/setup %}
 
+# Architecture Overview
+
 ## Scope and Exclusions
 
 The architecture overview covers how various components of RAMP work together and accomplish the functions that are provided out-of-the-box.  In particular, it covers the functions that reside in the RAMP codebase, but not functions that are provided from 3rd party libraries.

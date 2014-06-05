@@ -30,7 +30,7 @@ The basic structure of the template file is a key value dictionary, the keys bei
     "TemplateTwo": "A plain template"
 }
 ~~~
-
+{: .language-ruby}
 
 
 ### Comments
@@ -50,6 +50,7 @@ Comments can be added to the files to improve readability.  Both // and /* */ fo
     "TemplateTwo": "A plain template"
 }
 ~~~
+{: .language-ruby}
 
 Be careful not to put comments inside the template strings, as they will be included in the template output and look funny.
 
@@ -63,6 +64,8 @@ The template references a data object called __o__.  The value of __o__ is the d
     "UrlTemplate": "<a href='{%=o.url%}'>{%=o.text%}</a>"	
 }{% endraw %}
 ~~~
+{: .language-ruby}
+
 
 ### Global Javascript Function Calls
 
@@ -75,6 +78,8 @@ function itIsFun(subject) {
     return subject + " is fun!";
 }
 ~~~
+{: .language-ruby}
+
 
 (template)
 
@@ -83,6 +88,7 @@ function itIsFun(subject) {
     "SubjectReview": "<div>{%=itIsFun(o.subjectName)%}</div>"	
 }{% endraw %}
 ~~~
+{: .language-ruby}
 
 
 ### Linking Templates
@@ -100,6 +106,7 @@ Templates can embed other templates within them.  They do this by calling the __
     "UrlTemplate": "<a href='{%=o.url%}'>{%=o.text%}</a>"
 }{% endraw %}
 ~~~
+{: .language-ruby}
 
 
 ### Embedded Javascript
@@ -127,6 +134,7 @@ The template can also include embedded javascript to help construct more complex
             </li>"    
 }{% endraw %}
 ~~~
+{: .language-ruby}
 
 
 ## Template Usage
@@ -138,12 +146,14 @@ The parsed contents are then converted to a JSON object, and assigned to the cus
 ~~~
 tmpl.templates = JSON.parse(tmplHelper.stringifyTemplate(tmplFileContent));
 ~~~
+{: .language-ruby}
 
 Now the template object is ready to generate content using the templates provided.  To get the content, provide the template name (as defined in the template file) and a data JSON object (that has the appropriate properties required by the template).  E.g.
 
 ~~~
 result = tmpl("myTemplateName", oDataObject)
 ~~~
+{: .language-ruby}
 
 ## Full Example
 
@@ -171,6 +181,7 @@ result = tmpl("myTemplateName", oDataObject)
                         </li>"    
 }{% endraw %}
 ~~~
+{: .language-ruby}
 
 
 ### Javascript
@@ -201,6 +212,7 @@ function (tmplHelper, sample_template) { return {
 };
 });
 ~~~
+{: .language-ruby}
 
 
 ### Result
@@ -217,6 +229,7 @@ function (tmplHelper, sample_template) { return {
     </ul>
 </div>
 ~~~
+{: .language-ruby}
 
 ## Template Files
 
