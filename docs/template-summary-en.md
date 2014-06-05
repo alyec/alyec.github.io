@@ -21,14 +21,15 @@ Data object - a description of the data object (o.data) that gets passed into th
 ##Overview
 
 ###Basemap Selector
-
-<img src="../assets/images/basemap_selector_screenshot.png" width="213" height="208" />
+<section class="wb-lbx" lbx-gal">
+	<img src="../assets/images/basemap_selector_screenshot.png" width="213" height="208" />
+</section>
 
 Each row in the basemap selector dropdown.
 
 **Template Name**
 
-<a href="json-config-en.html#sitetemplate_basemaptemplate"> siteTemplate.basemapTemplate </a>
+[siteTemplate.basemapTemplate] ("json-config-en.html#sitetemplate_basemaptemplate")
 
 **Template File**
 
@@ -36,7 +37,7 @@ basemap_selector_template.json
 
 **Data Object**
 
-<a href="json-config-en.html#basemaps">config.basemaps[i]</a>
+[config.basemaps[i]](json-config-en.html#basemaps)
 
 [Back To Top](#top)
 
@@ -48,7 +49,7 @@ Each row in the datagrid when the datagrid is in the summary mode.
 
 **Template Name**
 
-<a href="json-config-en.html#featurelayers_datagrid_summaryrowtemplate">featureLayers[i].datagrid.summaryRowTemplate</a>
+[featureLayers[i].datagrid.summaryRowTemplate](json-config-en.html#featurelayers_datagrid_summaryrowtemplate)
 
 **Template File**
 
