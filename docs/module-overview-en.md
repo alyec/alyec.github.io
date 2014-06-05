@@ -43,6 +43,9 @@ categories: [documentation]
 
 [ramp/ramp](#ramp)
 
+
+
+
 ## ramp/basemapSelector {#basemapselector}
 
 Manages the widget that allows the user to change the basemap. Utilizes the [esri.dijit.Basemap](https://developers.arcgis.com/javascript/jsapi/basemap-amd.html) dijit.  Populates the widget with basemaps from the config.  All basemaps must be in the same projection.
@@ -60,10 +63,9 @@ Relevant Configuration Nodes
 	</a>
 </section>
 
-![Select A Basemap]()
+##### Template Summary
 
- Relevant Template Files
-: `basemap_selector_template`
+[Basemap Selector](template-summary-en.html#basemap_selector)
 
 [Back To Top](#top)
 
@@ -121,9 +123,11 @@ Relevant Configuration Nodes
 	</a>
 </section>
 
- Relevant Template Files
-: `datagrid_template`
-: `extended_datagrid_template`
+##### Template Summary
+
+[Datagrid Summary Mode](template-summary-en.html#datagrid_summary_mode)
+
+[Datagrid Expanded Mode](template-summary-en.html#datagrid_expanded_mode)
 
 [Back To Top](#top)
 
@@ -155,9 +159,6 @@ The view detail function involves generating a custom detail report (from a temp
 		<img src="../assets/images/view_feature_details.svg" style="max-width:80%" />
 	</a>
 </section>
-
- Relevant Template Files
-: `feature_details_template`
 
 [Back To Top](#top)
 
@@ -286,9 +287,11 @@ Relevant Configuration Nodes
 	</a>
 </section>
 
- Relevant Template Files
-: `filter_global_template`
-: `filter_row_template`
+##### Template Summary
+
+[Filter Global Row](template-summary-en.html#filter_global_row)
+
+[Filter Row](template-summary-en.html#filter_row)
 
 [Back To Top](#top)
 
@@ -344,6 +347,10 @@ Contains logic to go to full-screen mode.
 
 Relevant Configuration Nodes
 : `stringResources`
+
+##### Template Summary
+
+[Feature Details Panel](template-summary-en.html#feature_details_panel)
 
 [Back To Top](#top)
 
@@ -412,9 +419,11 @@ Relevant Configuration Nodes
 	</a>
 </section>
 
- Relevant Template Files
-: `feature_hovertip_template`
-: `feature_anchortip_template`
+##### Template Summary
+
+[Feature Hover Tip](template-summary-en.html#feature_hover_tip)
+
+[Feature Anchor Tip](template-summary-en.html#feature_anchor_tip)
 
 [Back To Top](#top)
 

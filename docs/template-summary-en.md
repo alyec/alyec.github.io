@@ -40,6 +40,8 @@ Data object - a description of the data object (o.data) that gets passed into th
 
 ###Basemap Selector {#basemap_selector}
 
+Each row in the basemap selector dropdown.
+
 **Sample Screenshot**
 
 <section class="wb-lbx lbx-gal">	
@@ -47,8 +49,6 @@ Data object - a description of the data object (o.data) that gets passed into th
 		<img src="../assets/images/basemap_selector_screenshot.png" width="213" height="208" />
 	</a>
 </section>
-
-Each row in the basemap selector dropdown.
 
 **Template Name**
 
@@ -66,6 +66,8 @@ basemap_selector_template.json
 
 ###Datagrid Summary Mode {#datagrid_summary_mode}
 
+Each row in the datagrid when the datagrid is in the summary mode.
+
 **Sample Screenshot**
 
 <section class="wb-lbx lbx-gal">	
@@ -73,8 +75,6 @@ basemap_selector_template.json
 <img src="../assets/images/datagrid_summary_screenshot.png" width="249" height="92" />
 </a>
 </section>
-
-Each row in the datagrid when the datagrid is in the summary mode.
 
 **Template Name**
 
