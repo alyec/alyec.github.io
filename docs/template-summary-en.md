@@ -21,8 +21,13 @@ Data object - a description of the data object (o.data) that gets passed into th
 ##Overview
 
 ###Basemap Selector
-<section class="wb-lbx" lbx-gal">
-	<img src="../assets/images/basemap_selector_screenshot.png" width="213" height="208" />
+
+**Sample Screenshot**
+
+<section class="wb-lbx lbx-gal">	
+	<a href="../assets/images/basemap_selector_screenshot.png">
+		<img src="../assets/images/basemap_selector_screenshot.png" width="213" height="208" />
+	</a>
 </section>
 
 Each row in the basemap selector dropdown.
@@ -43,7 +48,13 @@ basemap_selector_template.json
 
 ###Datagrid Summary Mode
 
+**Sample Screenshot**
+
+<section class="wb-lbx lbx-gal">	
+<a href="../assets/images/datagrid_summary_screenshot.png">
 <img src="../assets/images/datagrid_summary_screenshot.png" width="249" height="92" />
+</a>
+</section>
 
 Each row in the datagrid when the datagrid is in the summary mode.
 
@@ -65,7 +76,13 @@ The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.htm
 
 Each row in the datagrid when the datagrid is the expanded mode
 
+**Sample Screenshot**
+
+<section class="wb-lbx lbx-gal">
+<a href="../assets/images/extended_grid_screenshot.png">	
 <img src="../assets/images/extended_grid_screenshot.png" width="387" height="228" />
+</a>
+</section>
 
 **Template Name**
 
@@ -85,7 +102,13 @@ The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.htm
 
 The popup that appears when a feature on the map is clicked.
 
+**Sample Screenshot**
+
+<section class="wb-lbx lbx-gal">
+<a href="../assets/images/feature_anchor_tip_screenshot.png">	
 <img src="../assets/images/feature_anchor_tip_screenshot.png" width="208" height="118" />
+</a>
+</section>
 
 **Template Name**
 
@@ -105,7 +128,13 @@ The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.htm
 
 The popup that appears when the mouse hovers over a feature on the map.
 
+**Sample Screenshot**
+
+<section class="wb-lbx lbx-gal">
+<a href="../assets/images/feature_hover_tip_screenshot.png">	
 <img src="../assets/images/feature_hover_tip_screenshot.png" width="154" height="106" />
+</a>
+</section>
 
 **Template Name**
 
@@ -119,22 +148,19 @@ feature_hovertip_template.json
 
 The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.html"> Graphic object</a> associated with that point
 
-<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-
 [Back To Top](#top)
 	
 ###Feature Details Panel
 
 The content of the detail panel that slides out whenever a user clicks on a feature on the map or selects a feature from the datagrid.
 
+**Sample Screenshot**
+
+<section class="wb-lbx lbx-gal">	
+<a href="../assets/images/feature_detail_panel_screenshot.png">
 <img src="../assets/images/feature_detail_panel_screenshot.png" width="201" height="291" />
+</a>
+</section>
 
 **Template Name**
 
@@ -154,7 +180,13 @@ The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.htm
 
 The top row that contain the global layer and bounding box toggles
 
+**Sample Screenshot**
+
+<section class="wb-lbx lbx-gal">	
+<a href="../assets/images/filter_global_screenshot.png">
 <img src="../assets/images/filter_global_screenshot.png" width="368" height="36" />
+</a>
+</section>
 
 **Template Name**
 
@@ -174,7 +206,13 @@ filter_global_template.json
 
 Each row in the filter manager
 
+**Sample Screenshot**
+
+<section class="wb-lbx lbx-gal">
+<a href="../assets/images/filter_row_screenshot.png">	
 <img src="../assets/images/filter_row_screenshot.png" width="344" height="133" />
+</a>
+</section>
 
 **Template Name**
 
