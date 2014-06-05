@@ -60,7 +60,7 @@ basemap_selector_template.json
 
 **Data Object**
 
-[config.basemaps[i]](json-config-en.html#basemaps)
+[config.basemaps[]](json-config-en.html#basemaps)
 
 [Back To Top](#top)
 
@@ -78,7 +78,7 @@ Each row in the datagrid when the datagrid is in the summary mode.
 
 **Template Name**
 
-[featureLayers[i].datagrid.summaryRowTemplate](json-config-en.html#featurelayers_datagrid_summaryrowtemplate)
+[featureLayers[].datagrid.summaryRowTemplate](json-config-en.html#featurelayers_datagrid_summaryrowtemplate)
 
 **Template File**
 
@@ -104,7 +104,7 @@ Each row in the datagrid when the datagrid is the expanded mode
 
 **Template Name**
 
-<a href="json-config-en.html#featurelayers_datagrid_gridcolumns_columntemplate">config.featureLayers[i].datagrid.gridColumns[j].columnTemplate</a>
+<a href="json-config-en.html#featurelayers_datagrid_gridcolumns_columntemplate">config.featureLayers[].datagrid.gridColumns[].columnTemplate</a>
 
 **Template File**
 
@@ -130,7 +130,7 @@ The popup that appears when a feature on the map is clicked.
 
 **Template Name**
 
-<a href="json-config-en.html#featurelayers_maptipsettings_anchortemplate"> featureLayers[i].mapTipSettings.anchorTemplate</a>
+<a href="json-config-en.html#featurelayers_maptipsettings_anchortemplate"> featureLayers[].mapTipSettings.anchorTemplate</a>
 
 **Template File**
 
@@ -156,7 +156,7 @@ The popup that appears when the mouse hovers over a feature on the map.
 
 **Template Name**
 
-<a href="json-config-en.html#featurelayers_maptipsettings_hovertemplate">featureLayers[i].mapTipSettings.hoverTemplate</a>
+<a href="json-config-en.html#featurelayers_maptipsettings_hovertemplate">featureLayers[].mapTipSettings.hoverTemplate</a>
 
 **Template File**
 
@@ -182,7 +182,7 @@ The content of the detail panel that slides out whenever a user clicks on a feat
 
 **Template Name**
 
-<a href="json-config-en.html#featurelayers_detailtemplate">featureLayers[i].detailTemplate</a>
+<a href="json-config-en.html#featurelayers_detailtemplate">featureLayers[].detailTemplate</a>
 
 **Template File**
 

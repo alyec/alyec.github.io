@@ -53,8 +53,8 @@ Manages the widget that allows the user to change the basemap. Utilizes the [esr
 ##### API Page
 [BaseMapSelector](../api/yuidoc/classes/BaseMapSelector.html)
 
-Relevant Configuration Nodes
-: `basemaps`
+##### Relevant Configuration Nodes
+[basemaps](json-config-en.html#basemaps)
 
 ##### Relevant Sequence Diagrams
 <section class="wb-lbx lbx-gal">	
@@ -80,8 +80,8 @@ Manages the widget that allows the maps current state to be displayed as a URL. 
 ##### API Page
 [BookmarkLink](../api/yuidoc/classes/BookmarkLink.html)
 
-Relevant Configuration Nodes
-: `lang`
+##### Relevant Configuration Nodes
+[lang](json-config-en.html#lang_field)
 
 [Back To Top](#top)
 
@@ -109,10 +109,12 @@ The grid contains buttons to obtain details and zoom to row items.  This is done
 
 [Datagrid](../api/yuidoc/classes/Datagrid.html)
 
-Relevant Configuration Nodes
-: `datagrid`
-: `featureLayers[].datagrid`
-: `gridstrings`
+##### Relevant Configuration Nodes
+[datagrid](json-config-en.html#datagrid)
+
+[featureLayers[].datagrid](json-config-en.html#featurelayers_datagrid)
+
+[gridstrings](json-config-en.html#gridstrings)
 
 
 ##### Relevant Sequence Diagrams
@@ -262,10 +264,12 @@ The following actions are performed by the module
 ##### API Page
 [FilterManager](../api/yuidoc/classes/FilterManager.html)
 
-Relevant Configuration Nodes
-: `featureLayers[].id`
-: `featureLayers[].displayName`
-: `featureLayers[].symbology`
+##### Relevant Configuration Nodes
+[featureLayers[].id](json-config-en.html#featurelayers_id)
+
+[featureLayers[].displayName](json-config-en.html#featurelayers_displayname)
+
+[featureLayers[].symbology](json-config-en.html#featurelayers_symbology)
 
 ##### Relevant Sequence Diagrams
 
@@ -322,8 +326,8 @@ The module contains helper functions for [graphic](https://developers.arcgis.com
 ##### API Page
 [GraphicExtension](../api/yuidoc/classes/GraphicExtension.html)
 
-Relevant Configuration Nodes
-: `featureLayers[].detailTemplate`
+##### Relevant Configuration Nodes
+[featureLayers[].detailTemplate](json-config-en.html#featurelayers_detailtemplate)
 
 [Back To Top](#top)
 
@@ -345,8 +349,8 @@ Contains logic to go to full-screen mode.
 ##### API Page
 [GUI](../api/yuidoc/classes/GUI.html)
 
-Relevant Configuration Nodes
-: `stringResources`
+##### Relevant Configuration Nodes
+[stringResources](json-config-en.html#stringresources)
 
 ##### Template Summary
 
@@ -367,16 +371,24 @@ It also generates and hosts the scale bar.
 ##### API Page
 [Map](../api/yuidoc/classes/Map.html)
 
-Relevant Configuration Nodes
-: `basemaps[].showOnInit`
-: `basemaps[].url`
-: `extents`
-: `featureLayers[].url`
-: `featureLayers[].layerAttributes`
-: `featureLayers[].staticLayers`
-: `levelOfDetails.minLevel`
-: `levelOfDetails.maxLevel`
-: `spatialReference`
+##### Relevant Configuration Nodes
+[basemaps[].showOnInit](json-config-en.html#basemaps_showoninit)
+
+[basemaps[].url](json-config-en.html#basemaps_url)
+
+[extents](json-config-en.html#extents)
+
+[featureLayers[].url](json-config-en.html#featurelayers_url)
+
+[featureLayers[].layerAttributes](json-config-en.html#featurelayers_layerattributes)
+
+`featureLayers[].staticLayers`
+
+[levelOfDetails.minLevel](json-config-en.html#levelofdetails_minlevel)
+
+[levelOfDetails.maxLevel](json-config-en.html#levelofdetails_maxlevel)
+
+[spatialReference](json-config-en.html#spatialreference)
 
 ##### Relevant Sequence Diagrams
 
@@ -401,8 +413,8 @@ Fills the tips with contents from the template.
 ##### API Page
 [Maptips](../api/yuidoc/classes/Maptips.html)
 
-Relevant Configuration Nodes
-: `featureLayers[].mapTipSettings`
+##### Relevant Configuration Nodes
+[featureLayers[].mapTipSettings](json-config-en.html#featurelayers_maptipsettings)
 
 
 ##### Relevant Sequence Diagrams
@@ -441,8 +453,8 @@ Also handles the two-way synchronization between the map extent and the widget s
 ##### API Page
 [Navigation](../api/yuidoc/classes/Navigation.html)
 
-Relevant Configuration Nodes
-: `navWidget`
+##### Relevant Configuration Nodes
+[navWidget](json-config-en.html#navwidget)
 
 [Back To Top](#top)
 
@@ -463,7 +475,7 @@ NOTE: our current config file does not have the appropriate node.  We should add
 ##### API Page
 [QuickZoom](../api/yuidoc/classes/QuickZoom.html)
 
-Relevant Configuration Nodes
+##### Relevant Configuration Nodes
 : `quickzoom`
 
 [Back To Top](#top)
