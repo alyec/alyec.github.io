@@ -4,21 +4,17 @@ title: Documentation - ToC
 ---
 {% include JB/setup %}
 
-{% assign categories_list = site.categories %}
-
-
 # Documentation
 
-{% for page in site.pages %}
-
-	{% if page.categories[0] == "documentation" %}
-[{{ page.title }}]({{site.production_url}}{{ page.url }})      	
-	{% endif %}
-		{% if page.categories[1] == "documentation" %}
-[{{ page.title }}]({{site.production_url}}{{ page.url }})      	
-	{% endif %}
-		{% if page.categories[2] == "documentation" %}
-[{{ page.title }}]({{site.production_url}}{{ page.url }})      	
-	{% endif %}
-	
-{% endfor %}
+* [Getting Started]({{site.production_url}}docs\started-en.html)
+* [Customization Introduction]({{site.production_url}}docs\ramp-customization-intro-en.html)
+    * [JSON Config Definition]({{site.production_url}}docs\json-config-en.html)
+    * [Customizing Templates]({{site.production_url}}docs\template-guide-en.html)
+* [Architecture Overview]({{site.production_url}}docs\architecture-overview-en.html)
+    * [Initialization]({{site.production_url}}docs\dojo-setup-en.html)
+    * [Naming Conventions]({{site.production_url}}docs\namingconventions-en.html)
+    * [Module Overview]({{site.production_url}}docs\module-overview-en.html)
+    * [Templating Guide]({{site.production_url}}docs\template-guide-en.html)
+    * [External Library Implementations]({{site.production_url}}docs\external-libraries-en.html)
+    * [Build Tool]({{site.production_url}}docs\build-tool-en.html)
+* [API Reference]({{site.production_url}}api\yuidoc\index.html)
