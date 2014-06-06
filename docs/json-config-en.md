@@ -146,13 +146,13 @@ This page will walk you through the layout of the application configuration obje
 | <a name="basemaps"/> basemaps	| collection of map items	| order of collection will determine order they are added to the map.  can be empty.  if more than one entry, basemap selector widget could/(should?) initialize.
 | basemaps[].id	| string	| to identify layer.  unique across all map items.  no spaces!  use this to derive language based strings from stringResources (e.g. text to go in basemap selector would have a key like "basemapName<id>")
 | <a name="basemaps_url"/> basemaps[].url	| string	| REST url of the basemap
-| basemaps[].thumbnail	| string	| path to image file for use in basemap selector (optional)
+| <a name="basemaps_thumbnail" />basemaps[].thumbnail	| string	| path to image file for use in basemap selector (optional)
 | <a name="basemaps_showoninit"/>basemaps[].showOnInit	| boolean	| indicates if map should be active on load.  Only one TRUE per collection
 | basemaps[].scaleCssClass	| string	| Map scale style
-| basemaps[].type	| string	| Base map type
-| basemaps[].name	| string	| Basemap name
+| <a name="basemaps_type"/>basemaps[].type	| string	| Base map type
+| <a name="basemaps_name"/>basemaps[].name	| string	| Basemap name
 | basemaps[].altText	| string	| Alt text for the basemap thumbnail image
-| basemaps[].description	| string	| Description of the basemap
+| <a name="basemaps_description"/>basemaps[].description	| string	| Description of the basemap
 | featureLayers	| collection of map items	| order of collection will determine order they are added to the map.  can be empty. if more than one entry, layer selector widget could/(should?) initialize.
 | <a name="featurelayers_id" />featureLayers[].id	| string	| to identify layer.  unique across all map items.  no spaces!
 | <a name="featurelayers_displayname" />featureLayers[].displayName	| 	| Display name of the feature layer

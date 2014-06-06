@@ -31,6 +31,9 @@ Below is all the modules that are customizable through templating. This summariz
 
 [Filter Row](#filter_row)
 
+
+
+
 ###Header Description {#header_description}
 
 Description - a description of what the template modifies\\
@@ -42,11 +45,23 @@ Data object - a description of the data object (o.data) that gets passed into th
 
 Each row in the basemap selector dropdown.
 
+**Default Behaviour**
+
+The default basemap row contains the name of the basemap, its type in paratheses, the description and an icon. 
+
+<section class="wb-lbx lbx-gal">	
+	<a href="../assets/images/basemap_selector_default.png">
+		<img src="../assets/images/basemap_selector_default.png" style="width:517px; height:155px; max-width:80%" />
+	</a>
+</section>
+
+The default template uses the URL in [basemaps[].thumbnail]("json-config-en.html#basemaps_thumbnail") for the image icon, the [basemaps[].name]("json-config-en.html#basemaps_name") for the basemap name,  [basemaps[].type]("json-config-en.html#basemaps_type") for the basemap type, and [basemaps[].description]("json-config-en.html#basemaps_description") for the description. The user can feel free to add more fields to the [basemaps[]]("json-config-en.html#basemaps") entry if their template requires it.
+
 **Sample Screenshot**
 
 <section class="wb-lbx lbx-gal">	
 	<a href="../assets/images/basemap_selector_screenshot.png">
-		<img src="../assets/images/basemap_selector_screenshot.png" width="213" height="208" />
+		<img src="../assets/images/basemap_selector_screenshot.png" style="width:213px; height:208px; max-width:80%" />
 	</a>
 </section>
 
@@ -64,9 +79,19 @@ basemap_selector_template.json
 
 [Back To Top](#top)
 
+
+
+
+
 ###Datagrid Summary Mode {#datagrid_summary_mode}
 
 Each row in the datagrid when the datagrid is in the summary mode.
+
+**Default Behaviour**
+
+In the default datagrid summary mode, each row contains an image representing the feature on the map, the name of the feature, the layer the feature belongs to, as well as a "details" and "zoom to" button. 
+
+
 
 **Sample Screenshot**
 
@@ -90,6 +115,10 @@ The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.htm
 
 [Back To Top](#top)
 
+
+
+
+
 ###Datagrid Expanded Mode {#datagrid_expanded_mode}
 
 Each row in the datagrid when the datagrid is the expanded mode
@@ -101,6 +130,11 @@ Each row in the datagrid when the datagrid is the expanded mode
 <img src="../assets/images/extended_grid_screenshot.png" width="387" height="228" />
 </a>
 </section>
+
+**Default Behaviour**
+
+
+
 
 **Template Name**
 
@@ -116,6 +150,12 @@ The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.htm
 
 [Back To Top](#top)
 
+
+
+
+
+
+
 ###Feature Anchor Tip {#feature_anchor_tip}
 
 The popup that appears when a feature on the map is clicked.
@@ -127,6 +167,11 @@ The popup that appears when a feature on the map is clicked.
 <img src="../assets/images/feature_anchor_tip_screenshot.png" width="208" height="118" />
 </a>
 </section>
+
+**Default Behaviour**
+
+
+
 
 **Template Name**
 
@@ -142,6 +187,11 @@ The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.htm
 
 [Back To Top](#top)
 
+
+
+
+
+
 ###Feature Hover Tip {#feature_hover_tip}
 
 The popup that appears when the mouse hovers over a feature on the map.
@@ -153,6 +203,11 @@ The popup that appears when the mouse hovers over a feature on the map.
 <img src="../assets/images/feature_hover_tip_screenshot.png" width="154" height="106" />
 </a>
 </section>
+
+**Default Behaviour**
+
+
+
 
 **Template Name**
 
@@ -167,7 +222,12 @@ feature_hovertip_template.json
 The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.html"> Graphic object</a> associated with that point
 
 [Back To Top](#top)
-	
+
+
+
+
+
+
 ###Feature Details Panel {#feature_details_panel}
 
 The content of the detail panel that slides out whenever a user clicks on a feature on the map or selects a feature from the datagrid.
@@ -179,6 +239,11 @@ The content of the detail panel that slides out whenever a user clicks on a feat
 <img src="../assets/images/feature_detail_panel_screenshot.png" width="201" height="291" />
 </a>
 </section>
+
+**Default Behaviour**
+
+
+
 
 **Template Name**
 
@@ -194,6 +259,12 @@ The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.htm
 
 [Back To Top](#top)
 
+
+
+
+
+
+
 ###Filter Global Row {#filter_global_row}
 
 The top row that contain the global layer and bounding box toggles
@@ -205,6 +276,10 @@ The top row that contain the global layer and bounding box toggles
 <img src="../assets/images/filter_global_screenshot.png" width="368" height="36" />
 </a>
 </section>
+
+**Default Behaviour**
+
+
 
 **Template Name**
 
@@ -220,6 +295,12 @@ filter_global_template.json
 
 [Back To Top](#top)
 
+
+
+
+
+
+
 ###Filter Row {#filter_row}
 
 Each row in the filter manager
@@ -231,6 +312,11 @@ Each row in the filter manager
 <img src="../assets/images/filter_row_screenshot.png" width="344" height="133" />
 </a>
 </section>
+
+**Default Behaviour**
+
+
+
 
 **Template Name**
 
