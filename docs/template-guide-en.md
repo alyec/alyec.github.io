@@ -250,7 +250,7 @@ The template engine allows the caller to pass in any JSON object to supply value
 
 ### Data Object Layout
 
-o.data
+<a name="o_data"/>o.data
 : contains the primary data supplied by the caller.  For example, a hover-tip would likely supply the feature being hovered over here.  The caller can optionally supply a compound object consisting of many useful parameters.
 
 o.config
@@ -259,10 +259,10 @@ o.config
 o.str
 : points to the stringResources dictionary within the config object.  We provide this as a shortcut pointer to reduce template clutter.
 
-o.fn
+<a name="o_fn"/>o.fn
 : contains formatting functions that can be called within the template.  Currently this includes helper functions defined in tmplUtil module.  In the future we want to include user-defined custom functions as well.
 
-o.lyr
+<a name="o_lyr"/>o.lyr
 : (optional) points to the layer object that is relevant for the current template.  Allows the template to avoid iterating through the layer collection in the global config object.
 
 

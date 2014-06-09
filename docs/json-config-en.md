@@ -196,8 +196,8 @@ This page will walk you through the layout of the application configuration obje
 | <a name="sitetemplate_filterglobalrowtemplate" />siteTemplate.filterGlobalRowTemplate	| string	| Template for
 | <a name="sitetemplate_filterrowtemplate" />siteTemplate.filterRowTemplate	| string	| Filter template used to generate filter content for map layers.
 | <a name="globalfilter" /> globalFilter	| 	| 
-| globalFilter.txtAllData	| string	| Global filter text for All Data
-| globalFilter.toggleLabel	| <collection>	| Attributes and settings for individual toggle in the global section of filter manager
+| <a name="globalfilter_txtalldata"/>globalFilter.txtAllData	| string	| Global filter text for All Data
+| <a name="globalfilter_togglelabel"/>globalFilter.toggleLabel	| <collection>	| Attributes and settings for individual toggle in the global section of filter manager
 | globalFilter.toggleLabel[].id	| string	| Id of the toggle label
 | globalFilter.toggleLabel[].dataAttribute	| string	| Data attribute
 | globalFilter.toggleLabel[].value	| string	| 
