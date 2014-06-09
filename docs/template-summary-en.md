@@ -11,35 +11,34 @@ categories: [documentation]
 
 Below is all the modules that are customizable through templating. This summarizes all the information the developers need in order to customize each module through templating. For details on how templating works, refer to this [guide](template-guide-en.html). For an example of modifying a module through templating, refer to this [guide](template-example-en.html).
 
-###Quick Links
+###Table of Content
 
-[Header Description](#header_description)
-
-[Basemap Selector](#basemap_selector)
-
-[Datagrid Summary Mode](#datagrid_summary_mode)
-
-[Datagrid Expanded Mode](#datagrid_expanded_mode)
-
-[Feature Hover Tip](#feature_hover_tip)
-
-[Feature Details Panel](#feature_details_panel)
-
-[Feature Anchor Tip](#feature_anchor_tip)
-
-[Filter Global Row](#filter_global_row)
-
-[Filter Row](#filter_row)
+* [Header Description](#header_description)
+* [Basemap Selector](#basemap_selector)
+* [Datagrid Summary Mode](#datagrid_summary_mode)
+* [Datagrid Expanded Mode](#datagrid_expanded_mode)
+* [Feature Hover Tip](#feature_hover_tip)
+* [Feature Details Panel](#feature_details_panel)
+* [Feature Anchor Tip](#feature_anchor_tip)
+* [Filter Global Row](#filter_global_row)
+* [Filter Row](#filter_row)
 
 
 
 
 ###Header Description {#header_description}
 
-Description - a description of what the template modifies\\
-Template Name - the path in the JSON configuration file containing the name of the template. Each new line denotes the next child in the path.\\
-Template File - the template file containing the template, all files reside in the "RAMP/modules/templates" folder\\
-Data object - a description of the data object (o.data) that gets passed into the template
+Description
+: A description of what the template modifies\\
+
+Template Name
+: The path in the JSON configuration file containing the name of the template. Each new line denotes the next child in the path.\\
+
+Template File
+: The template file containing the template, all files reside in the "RAMP/modules/templates" folder\\
+
+Data object
+: A description of the data object (o.data) that gets passed into the template
 
 ###Basemap Selector {#basemap_selector}
 
@@ -77,7 +76,8 @@ basemap_selector_template.json
 
 [config.basemaps[]](json-config-en.html#basemaps)
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -119,7 +119,8 @@ datagrid_template.json
 
 The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.html"> Graphic object</a> associated with that point
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -153,7 +154,8 @@ extended_datagrid_template.json
 
 The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.html"> Graphic object</a> associated with that point, along with an added field "columnIdx" that indicates the column index (zero-based).
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -189,7 +191,8 @@ feature_anchortip_template.json
 
 The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.html"> Graphic object</a> associated with that point
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -224,7 +227,8 @@ feature_hovertip_template.json
 
 The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.html"> Graphic object</a> associated with that point
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -259,7 +263,8 @@ feature_details_template.json
 
 The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.html"> Graphic object</a> associated with that point
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -295,7 +300,8 @@ filter_manager_template.json
 
 <a href="json-config-en.html#globalfilter">config.globalFilter</a>
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -335,4 +341,5 @@ filter_manager_template.json
 
 Custom
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}

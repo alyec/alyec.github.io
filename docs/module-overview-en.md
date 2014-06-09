@@ -9,41 +9,21 @@ categories: [documentation]
 
 # RAMP Module Overview {#wb-cont}
 
-## Quick Links
-
-[ramp/basemapSelector](#basemapselector)
-
-[ramp/bookmarkLink](#bookmarklink)
-
-[ramp/datagrid](#datagrid)
-
-[ramp/datagridClickHandler](#datagridclickhandler)
-
-[ramp/eventManager](#eventmanager)
-
-[ramp/featureClickHandler](#featureclickhandler)
-
-[ramp/featureHighlighter](#featurehighlighter)
-
-[ramp/filterManager](#filtermanager)
-
-[ramp/globalStorage](#globalstorage)
-
-[ramp/graphicExtension](#graphicextension)
-
-[ramp/gui](#gui)
-
-[ramp/map](#map)
-
-[ramp/maptips](#maptips)
-
-[ramp/navigation](#navigationmodule)
-
-[ramp/quickzoom](#quickzoom)
-
-[ramp/ramp](#ramp)
-
-
+## Table of Content
+{: .span-4 module-table-contents}
+* [ramp/basemapSelector](#basemapselector)* [ramp/bookmarkLink](#bookmarklink)* [ramp/datagrid](#datagrid)* [ramp/datagridClickHandler](#datagridclickhandler)
+* [ramp/eventManager](#eventmanager)
+* [ramp/featureClickHandler](#featureclickhandler)
+* [ramp/featureHighlighter](#featurehighlighter)
+* [ramp/filterManager](#filtermanager)
+* [ramp/globalStorage](#globalstorage)
+* [ramp/graphicExtension](#graphicextension)
+* [ramp/gui](#gui)
+* [ramp/map](#map)
+* [ramp/maptips](#maptips)
+* [ramp/navigation](#navigationmodule)
+* [ramp/quickzoom](#quickzoom)
+* [ramp/ramp](#ramp)
 
 
 ## ramp/basemapSelector {#basemapselector}
@@ -67,7 +47,8 @@ Manages the widget that allows the user to change the basemap. Utilizes the [esr
 
 [Basemap Selector](template-summary-en.html#basemap_selector)
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -83,7 +64,8 @@ Manages the widget that allows the maps current state to be displayed as a URL. 
 ##### Relevant Configuration Nodes
 [lang](json-config-en.html#lang_field)
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -131,7 +113,8 @@ The grid contains buttons to obtain details and zoom to row items.  This is done
 
 [Datagrid Expanded Mode](template-summary-en.html#datagrid_expanded_mode)
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -162,7 +145,8 @@ The view detail function involves generating a custom detail report (from a temp
 	</a>
 </section>
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -175,7 +159,8 @@ The module defines event names as constants to avoid typing errors.
 ##### API Page
 [EventManager](../api/yuidoc/classes/EventManager.html)
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -204,7 +189,8 @@ This primarily consists of clicking a feature, and hovering over a feature.  For
 	</a>
 </section>
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -241,7 +227,8 @@ The module also generates the graphic layers used to manage the highlight imager
 	</a>
 </section>
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -297,7 +284,8 @@ The following actions are performed by the module
 
 [Filter Row](template-summary-en.html#filter_row)
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -311,7 +299,8 @@ The module defines global items to make things easier to share across modules.  
 ##### API Page
 [GlobalStorage](../api/yuidoc/classes/GlobalStorage.html)
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -329,7 +318,8 @@ The module contains helper functions for [graphic](https://developers.arcgis.com
 ##### Relevant Configuration Nodes
 [featureLayers[].detailTemplate](json-config-en.html#featurelayers_detailtemplate)
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -356,7 +346,8 @@ Contains logic to go to full-screen mode.
 
 [Feature Details Panel](template-summary-en.html#feature_details_panel)
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -398,7 +389,8 @@ It also generates and hosts the scale bar.
 	</a>
 </section>
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -437,7 +429,8 @@ Fills the tips with contents from the template.
 
 [Feature Anchor Tip](template-summary-en.html#feature_anchor_tip)
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -456,7 +449,8 @@ Also handles the two-way synchronization between the map extent and the widget s
 ##### Relevant Configuration Nodes
 [navWidget](json-config-en.html#navwidget)
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -478,7 +472,8 @@ NOTE: our current config file does not have the appropriate node.  We should add
 ##### Relevant Configuration Nodes
 : `quickzoom`
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
 
 
 
@@ -491,4 +486,5 @@ The map module contains shared functions used by RAMP.  In particular, it houses
 ##### API Page
 [RAMP](../api/yuidoc/classes/RAMP.html)
 
-<p class="text-right"><a href="#top">Back To Top</a></p>
+[Back To Top](#top)
+{: .text-right}
