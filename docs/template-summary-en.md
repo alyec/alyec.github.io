@@ -77,7 +77,7 @@ basemap_selector_template.json
 
 [config.basemaps[]](json-config-en.html#basemaps)
 
-[Back To Top](#top)
+<p class="text-right"><a href="#top">Back To Top</a></p>
 
 
 
@@ -119,7 +119,7 @@ datagrid_template.json
 
 The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.html"> Graphic object</a> associated with that point
 
-[Back To Top](#top)
+<p class="text-right"><a href="#top">Back To Top</a></p>
 
 
 
@@ -153,7 +153,7 @@ extended_datagrid_template.json
 
 The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.html"> Graphic object</a> associated with that point, along with an added field "columnIdx" that indicates the column index (zero-based).
 
-[Back To Top](#top)
+<p class="text-right"><a href="#top">Back To Top</a></p>
 
 
 
@@ -189,7 +189,7 @@ feature_anchortip_template.json
 
 The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.html"> Graphic object</a> associated with that point
 
-[Back To Top](#top)
+<p class="text-right"><a href="#top">Back To Top</a></p>
 
 
 
@@ -224,7 +224,7 @@ feature_hovertip_template.json
 
 The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.html"> Graphic object</a> associated with that point
 
-[Back To Top](#top)
+<p class="text-right"><a href="#top">Back To Top</a></p>
 
 
 
@@ -259,7 +259,7 @@ feature_details_template.json
 
 The ESRI <a href="https://developers.arcgis.com/javascript/jsapi/graphic-amd.html"> Graphic object</a> associated with that point
 
-[Back To Top](#top)
+<p class="text-right"><a href="#top">Back To Top</a></p>
 
 
 
@@ -295,7 +295,7 @@ filter_manager_template.json
 
 <a href="json-config-en.html#globalfilter">config.globalFilter</a>
 
-[Back To Top](#top)
+<p class="text-right"><a href="#top">Back To Top</a></p>
 
 
 
@@ -335,4 +335,4 @@ filter_manager_template.json
 
 Custom
 
-[Back To Top](#top)
+<p class="text-right"><a href="#top">Back To Top</a></p>
