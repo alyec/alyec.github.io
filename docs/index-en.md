@@ -7,6 +7,7 @@ published: true
 {% include JB/setup %}
 
 # RAMP Documentation {#wb-cont}
+
 ## Table of Contents
 
 * [Getting Started]({{site.production_url}}/docs/started-en.html)
