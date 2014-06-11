@@ -6,7 +6,8 @@ published: true
 
 {% include JB/setup %}
 
-# Documentation {#wb-cont}
+# RAMP Documentation {#wb-cont}
+## Table of Contents
 
 * [Getting Started]({{site.production_url}}/docs/started-en.html)
 * [Customization Introduction]({{site.production_url}}/docs/ramp-customization-intro-en.html)
