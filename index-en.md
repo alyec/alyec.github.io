@@ -1,11 +1,13 @@
 ---
-layout: index-en
-title: RAMP-RACP
+layout: "index-en"
+title: "RAMP-RACP"
 tagline: Reusable Accessible Mapping Platform
+published: true
 ---
+
 {% include JB/setup %}
 
-# Reusable, Accessible, Mapping Platform (RAMP) 
+# Reusable, Accessible, Mapping Platform (RAMP) {#wb-cont}
 
 ## What is the RAMP?
 
@@ -49,5 +51,3 @@ tagline: Reusable Accessible Mapping Platform
  * Report issues and suggestions
  * Documentation
  * Testing
-
-
