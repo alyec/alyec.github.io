@@ -196,17 +196,17 @@ $ grunt js
 ##### --source
 To generate source mappings for the core JS files, use __source__ option as follows:
 
-```
+{% highlight bash %}
 $ grunt js --source
-```
+{% endhighlight %}
 
 #### page
 Outputs English and French versions of the content template file (__ramp-map-src.html__) by replacing placeholders with provided locale strings; saves them as __map.html__ and __carte.html__. Updates CSS references to the following:
 
-```
+{% highlight html linenos %}
 <link href="css/lib/lib.min.css" rel="stylesheet" type="text/css" />
 <link href="css/build/ramp-theme/ramp.less.min.css" rel="stylesheet" type="text/css" />
-```
+{% endhighlight %}
 
 JS references are updated to the following:
 
