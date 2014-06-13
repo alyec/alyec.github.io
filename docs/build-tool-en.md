@@ -1,14 +1,14 @@
 ---
 layout: "index-en"
 title: Build Tool
-categories: 
+categories:
   - documentation
 published: true
 ---
 
 {% include JB/setup %}
 
-# Build Tool Setup {#wb-cont}
+# Build Tool Setup testing, testing, Serguei {#wb-cont}
 
 ## Dependencies
 The build tool uses [Grunt](http://gruntjs.com/) for automation of linting, minifying, concatenating and other magical things we do with our JS and CSS files.
@@ -26,7 +26,6 @@ $ npm install -g grunt-cli
 ~~~
 
 This will add the grunt command in your system path, allowing it to be run from any directory. You might want to restart your machine, just in case.
-
 
 ## Build Tool
 The build tool is just a Grunt project set up to automate the processing of the template, JS and CSS files before deployment. It also outputs the English and French versions of the main page template using supplies locale strings.
@@ -47,7 +46,6 @@ Apart from these two files, there is also the __node_modules__ folder in the roo
 
 You can read more about Grunt projects [here](http://gruntjs.com/getting-started)
 
-
 ### Running the Build Tool
 To run the build tool do the following:
 
@@ -55,7 +53,7 @@ To run the build tool do the following:
 2. Change to the project’s root directory
 3. Use __npm install__ to install project dependencies (need to run only once or when adding new modules)
 4. You might need to check out for editing __RAMP/css/src/ramp-theme/ramp.less.pref.css__ as this is the only source file the build tool requires access to modify
-5. Use the following to run the build tool: 
+5. Use the following to run the build tool:
 
 ~~~
 grunt
@@ -63,9 +61,8 @@ grunt
 
 if you get an error that something is not found, try running __npm install__ again.
 
-
 ### Default Task
-Unless you specify a task to run, __grunt__ command runs _css_, _js_, and _page_ tasks and they will 
+Unless you specify a task to run, __grunt__ command runs _css_, _js_, and _page_ tasks and they will
 
 1. increment the project’s version number;
 2. convert LESS files from __RAMP\css\src__ to CSS, add browser-specific prefixes to CSS files in __RAMP\css\src__, minimize CSS, and copy them to __RAMP\css\build__; concatenate CSS libraries located in __RAMP\css\lib src__, and copy the resulting __lib.min.css__ to __RAMP\css\lib__;
@@ -79,9 +76,8 @@ To generate source mappings for the core JS files, use source option as follows:
 ~~~
 $ grunt --source
 ~~~
- 
-Note: folders __RAMP/javascript/build__, __RAMP/javascript/lib__, __RAMP/docs__, __RAMP/css/build__, and __RAMP/css/lib__ are also cloaked, so don’t check them in either.
 
+Note: folders __RAMP/javascript/build__, __RAMP/javascript/lib__, __RAMP/docs__, __RAMP/css/build__, and __RAMP/css/lib__ are also cloaked, so don’t check them in either.
 
 ### Other Tasks
 The default task calls the three main build tasks and if you don’t want to build everything at once all the time, you can call any of the of build tasks individually. You can also call any of the utility tasks defined in the __Gruntfile__. You can do that by using
@@ -96,7 +92,6 @@ Generate API documentation using YUIDoc and annotated source code documents usin
 ~~~
 $ grunt api
 ~~~
-
 
 #### bump
 Increments the project’s version number; needs to have write access to __package.json__ and __yuidoc.json__. Use the following to run this task:
@@ -148,7 +143,7 @@ Converts LESS, prefixes CSS, minifies and copies the resulting CSS files to the 
 $ grunt css
 ~~~
 
-Note: You need to run this task every time you modify any *.less files since the browser cannot interpret them directly and no changes will be reflected in rendering of the page. It’s best to use _wcss_ task to auto-convert LESS to CSS on every change. 
+Note: You need to run this task every time you modify any *.less files since the browser cannot interpret them directly and no changes will be reflected in rendering of the page. It’s best to use _wcss_ task to auto-convert LESS to CSS on every change.
 
 #### deploy
 Copies only the necessary files to a specified location leaving out source folders. This task _will_ fail if there are any JS errors present. Use the following to run this task:
@@ -158,7 +153,6 @@ $ grunt deploy
 ~~~
 
 Note: The target folder is cleaned prior to copying files.
-
 
 #### hint
 Runs JSHint on all JS files in __RAMP/javascript/src/RAMP/__. Use the following to run this task:
@@ -175,7 +169,6 @@ $ grunt hint --target=Modules/datagrid.js
 $ grunt hint -tr Modules/datagrid.js
 ~~~
 
-
 ##### --output / -o
 To lint a specific JS file, use the __--target__ or its shortcut __-tr__ options and specify the path to the file relative to __RAMP/javascript/src/RAMP/__:
 
@@ -184,7 +177,6 @@ $ grunt hint --output=jsHintErrors.my
 $ grunt hint -o jsHintErrors.my
 ~~~
 
-
 #### js
 JShints, uglifies, concatenates, and copies the resulting JS files and templates to the __build__ and __lib__ folders. This task _will_ fail if there are any errors present. Use the following to run this task
 
@@ -192,21 +184,20 @@ JShints, uglifies, concatenates, and copies the resulting JS files and templates
 $ grunt js
 ~~~
 
-
 ##### --source
 To generate source mappings for the core JS files, use __source__ option as follows:
 
-{% highlight bash %}
+```
 $ grunt js --source
-{% endhighlight %}
+```
 
 #### page
 Outputs English and French versions of the content template file (__ramp-map-src.html__) by replacing placeholders with provided locale strings; saves them as __map.html__ and __carte.html__. Updates CSS references to the following:
 
-{% highlight html linenos %}
+```
 <link href="css/lib/lib.min.css" rel="stylesheet" type="text/css" />
 <link href="css/build/ramp-theme/ramp.less.min.css" rel="stylesheet" type="text/css" />
-{% endhighlight %}
+```
 
 JS references are updated to the following:
 
@@ -214,7 +205,7 @@ JS references are updated to the following:
 <script src="javascript/lib/lib.min.js" type="text/javascript"></script>
 <script src="javascript/build/RAMP/RAMP-starter.js" type="text/javascript"></script>
 ~~~
- 
+
 It reads two csv files containing English and French strings respectively from __RAMP/assets/strings_en.csv__ and __RAMP/assets/strings_fr.csv__. The files are a simple set of key-values with the header of __key,value__. The build tool also loads the config file located at _configFileLocation_ and mixes found __stringResources__ with strings from the csv files. After that, it runs a replacement task on the content template, generating a language specific html files.
 
 Saves the newly created files as __map.html__ and __carte.html__ in the root of RAMP. Try not to check these files into TFS.
@@ -225,14 +216,12 @@ Use the following to run this task:
 $ grunt page
 ~~~
 
-
 #### wcss
 Watches all [LESS](http://lesscss.org) files in __RAMP/css/src/__ and runs the _css_ task on change. Use the following to run this task:
 
 ~~~
 $ grunt wcss
 ~~~
-
 
 #### wjs
 Watches all JS files in __RAMP/javascript/src/RAMP/__ and runs the _hint_ task on the changed file. Use the following to run this task:
@@ -248,7 +237,6 @@ To watch for a specific JS file, use the __--target__ or its shortcut __-tr__ op
 $ grunt wjs --target=Modules/datagrid.js
 $ grunt wjs -tr Modules/datagrid.js
 ~~~
-
 
 ### Config File - package.json
 
@@ -334,7 +322,6 @@ The build tool uses a number of Grunt-specific and general [NPM](https://www.npm
 * [jshint-stylish-plain](https://github.com/AleksueiR/jshint-stylish-plain)
 * [grunt-bump](https://www.npmjs.org/package/grunt-bump)
 
-
 ### Other
 
 #### Making your Grunt Snarl
@@ -348,7 +335,7 @@ To add a JavaScript library, do the following:
 1.	create a folder in __RAMP/javascript/lib src/{library name}.{ library  version}__, and copy the library files into this folder;
 2.	add the main uglified library file name(s) to the _jsLibToConcat_ property in __package.json__ file making sure the path is relative to the _jsFolder_ property; if the library doesn’t have an uglified version, do __step 3__ even if you didn’t modify the library’s source;
 3.	if you made changes to the library’s source file(s), add their names to the _jsLibToUglify_ property of  the __package.json__ file; the build tool will create an uglified version with __*.min.js__ extension;
-4.	include the reference to the library’s source file(s) if you modified them and to main uglified file(s) if you didn’t in __ramp-map-src.html__ between the <!-- JS LIB --> comment tags: 
+4.	include the reference to the library’s source file(s) if you modified them and to main uglified file(s) if you didn’t in __ramp-map-src.html__ between the <!-- JS LIB --> comment tags:
 5.	run the tool;
 
 #### Adding CSS Library
@@ -357,7 +344,7 @@ To add a CSS library, do the following:
 1.	create a folder in __RAMP/css/lib src/{library name}.{ library  version}__, and copy the library files into this folder;
 2.	add the main minified library file name(s) to the _cssLibToConcat_ property in __package.json__ file making sure the path is relative to the _cssFolder_ property; if the library doesn’t have an minified version, do __step 3__ even if you didn’t modify the library’s source;
 3.	if you made changes to the library’s source file(s), add their names to the _cssLibToMinify_ property of  the __package.json__ file; the build tool will create an minified version with __*.min.css__ extension;
-4.	include the reference to the library’s source file(s) if you modified them and to main minified file(s) if you didn’t in __ramp-map-src.html__ between the <!-- CSS LIB --> comment tags: 
+4.	include the reference to the library’s source file(s) if you modified them and to main minified file(s) if you didn’t in __ramp-map-src.html__ between the <!-- CSS LIB --> comment tags:
 5.	run the tool;
 
 #### Making Cake
@@ -368,7 +355,6 @@ To have the build tool make you a cake, do the following:
 3.	spin three times on your chair clapping your hands and shouting “Cake”;
 4.	use the command __grunt cake__
 5.	enjoy your cake;
-
 
 ### Troubleshooting
 
@@ -381,7 +367,7 @@ Aborted due to warnings.
 ~~~
 
 Run the __npm install__ command again (you may want to delete the __node_modules__ folder from the root, if it didn’t work after the first try, just in case):
- 
+
 #### Unable to Write “ramp.less.pref.css”
 
 ~~~
