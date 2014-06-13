@@ -10,3 +10,7 @@ Thumbs.db
 .rvmrc
 /node_modules
 /.localhistory
+
+*~
+*.swp
+Gemfile*
