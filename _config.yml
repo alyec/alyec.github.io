@@ -20,6 +20,22 @@ author :
   twitter : username
   feedburner : feedname
 
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  use_coderay: true
+
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: nil
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls
