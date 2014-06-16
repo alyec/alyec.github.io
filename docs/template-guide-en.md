@@ -24,7 +24,7 @@ Templates are stored in .json files, but can contain extended json (such as inli
 
 The basic structure of the template file is a key value dictionary, the keys being the template names, the values being the templates.  E.g.
 
-~~~ ruby
+~~~ js
 {
     "TemplateOne": "<b>A bold template</b>",
     "TemplateTwo": "A plain template"
@@ -37,7 +37,7 @@ The basic structure of the template file is a key value dictionary, the keys bei
 
 Comments can be added to the files to improve readability.  Both // and /* */ formats are accepted.  E.g.
 
-~~~ ruby
+~~~ js
 /*
 * A fun sample template file
 * to help with your code learnin
@@ -51,7 +51,6 @@ Comments can be added to the files to improve readability.  Both // and /* */ fo
 }
 ~~~
 
-
 Be careful not to put comments inside the template strings, as they will be included in the template output and look funny.
 
 
@@ -59,7 +58,7 @@ Be careful not to put comments inside the template strings, as they will be incl
 
 The template references a data object called __o__.  The value of __o__ is the data object supplied to the template engine when it is called.  Using the embedded value tags {{ "{%= " }} %} we can reference the object and have the value appear in the template output.  E.g. this template will output a hyperlink based on the values in the data object.  The data object must have properties .url and .text to work.
 
-~~~ ruby
+~~~ js
 {% raw %}{
     "UrlTemplate": "<a href='{%=o.url%}'>{%=o.text%}</a>"	
 }{% endraw %}
@@ -73,7 +72,7 @@ The template can also call any globally defined javascript function for addition
 
 (in global javascript space)
 
-~~~ ruby
+~~~ js
 function itIsFun(subject) {
     return subject + " is fun!";
 }
@@ -83,7 +82,7 @@ function itIsFun(subject) {
 
 (template)
 
-~~~ ruby
+~~~ js
 {% raw %}{
     "SubjectReview": "<div>{%=itIsFun(o.subjectName)%}</div>"	
 }{% endraw %}
@@ -95,7 +94,7 @@ function itIsFun(subject) {
 
 Templates can embed other templates within them.  They do this by calling the __include__ function inside code tags {{ "{% " }} %}.  The include function parameters are the template name, and a data object for that template.  E.g.
 
-~~~ ruby
+~~~ js
 {% raw %}{
     //A link in a div
     "DivTemplate": "<div class='nice-format'>
@@ -112,7 +111,7 @@ Templates can embed other templates within them.  They do this by calling the __
 ### Embedded Javascript
 The template can also include embedded javascript to help construct more complex templates.  Code is contained in {{ "{% " }} %} tags.  E.g. this template will loop through all the properties in the data object and generate list items for each property based on a second template.  Note how the __include__ call bundles up a custom data object to pass to the simpleListItem template.
 
-~~~ ruby
+~~~ js
 {% raw %}{
     //make a full list of properties
     "PropertiesTemplate": 
@@ -143,14 +142,14 @@ Once the template is loaded from a file, it must be parsed from the human-readab
 
 The parsed contents are then converted to a JSON object, and assigned to the customized templates property of the template engine.  E.g.
 
-~~~ ruby
+~~~ js
 tmpl.templates = JSON.parse(tmplHelper.stringifyTemplate(tmplFileContent));
 ~~~
 
 
 Now the template object is ready to generate content using the templates provided.  To get the content, provide the template name (as defined in the template file) and a data JSON object (that has the appropriate properties required by the template).  E.g.
 
-~~~ ruby
+~~~ js
 result = tmpl("myTemplateName", oDataObject)
 ~~~
 
@@ -159,7 +158,7 @@ result = tmpl("myTemplateName", oDataObject)
 
 ### Template File
 
-~~~ ruby
+~~~ js
 {% raw %}{
     //make a full list of properties
     "PropertiesTemplate": 
@@ -188,7 +187,7 @@ result = tmpl("myTemplateName", oDataObject)
 
 We assume the main page has included the Templating javascript library.
 
-~~~ ruby
+~~~ js
 define([
     "utils/tmplHelper",
     "dojo/text!./templates/sample_template.json"],
@@ -217,7 +216,7 @@ function (tmplHelper, sample_template) { return {
 
 ### Result
 
-~~~ ruby
+~~~ html
 <div>
     <ul>
         <li>

@@ -22,9 +22,12 @@ The template uses the JSON configuration file to populate the data in each row. 
 
 The templating engine takes each entry in the basemap config and stores it in the data object that becomes available to the template. Below is the default template for the basemap selector, note the use of o.data to populate fields:
 
+~~~ html
 	<div class='esriBasemapGalleryLabelContainer'>
-	{% raw %}<span alt='{%= o.data.name %} ({%= o.data.type %})' title='{%= o.data.name %} ({%= o.data.type %})'>{%= o.data.name %}({%=o.data.type%})</span> <span class='font-xsmall extra'>{%= o.data.description %}</span>{% endraw %}
+	{% raw %}<span alt='{%= o.data.name %} ({%= o.data.type %})' title='{%= o.data.name %} ({%= o.data.type %})'>{%= o.data.name %}({%=o.data.type%})</span>{% endraw %}
+    {% raw %}<span class='font-xsmall extra'>{%= o.data.description %}</span>{% endraw %}
 	{% raw %}</div><img class='esriBasemapGalleryThumbnail' src='{%=%20o.data.thumbnail%20%}' alt='{%= o.data.altText %}' />{% endraw %}
+~~~
 
 The template then uses the data from the config to generate HTML elements to represent the basemap. Note for example in the default template, the "name" and "type" fields in the config are used as the text visible to the user that describes the basemap. 
 

@@ -60,7 +60,7 @@ We recommend using [CodeMaid](http://www.codemaid.net/) to clean up javascript f
 
 All javascript should conform to [JSHint](http://www.jshint.com/docs/options/) rules, with the following configuration options enabled
 
-~~~
+~~~ js
 // Enforce
 
 bitwise: true

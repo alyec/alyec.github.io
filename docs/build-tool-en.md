@@ -21,7 +21,7 @@ To install Grunt on Windows, you first need to install [Node.js](http://nodejs.o
 
 After installing the dependencies, run the following in your command shell as Administrator
 
-~~~
+~~~ js
 $ npm install -g grunt-cli
 ~~~
 
@@ -57,8 +57,8 @@ To run the build tool do the following:
 3. Use __npm install__ to install project dependencies (need to run only once or when adding new modules)
 4. Use the following to run the build tool:
 
-~~~
-grunt
+~~~ js
+$ grunt
 ~~~
 
 if you get an error that something is not found, try running __npm install__ again.
@@ -75,28 +75,28 @@ Unless you specify a task to run, __grunt__ command runs _cleanAll_, _css_, _js_
 #### --source
 To generate source mappings for the core JS files, use source option as follows:
 
-~~~
+~~~ js
 $ grunt --source
 ~~~
 
 ### Other Tasks
 The default task calls the three main build tasks and if you don’t want to build everything at once all the time, you can call any of the of build tasks individually. You can also call any of the utility tasks defined in the __Gruntfile__. You can do that by using
 
-~~~
+~~~ js
 $ grunt <task-name>
 ~~~
 
 #### api
 Generate API documentation using YUIDoc and annotated source code documents using Docco and save them in "__docs/docco__" and "__docs/yuidoc__" folder. Use the following to run this task:
 
-~~~
+~~~ js
 $ grunt api
 ~~~
 
 #### bump
 Increments the project’s version number in files __package.json__ and __yuidoc.json__. Use the following to run this task:
 
-~~~
+~~~ js
 $ grunt bump
 >> Version bumped to 0.0.2
 
@@ -123,14 +123,14 @@ Removes all temporary and build folders:
 
 Use the following to run this task:
 
-~~~
+~~~ js
 $ grunt cleanAll
 ~~~
 
 #### css
 Converts LESS, prefixes CSS, minifies and copies the resulting CSS files to the __build/css__ folder. Use the following to run this task:
 
-~~~
+~~~ js
 $ grunt css
 ~~~
 
@@ -139,7 +139,7 @@ Note: You need to run this task every time you modify any *.less files since the
 #### deploy
 Runs the _build_ and then copies only the necessary files to a specified location leaving out source folders. This task _will_ fail if there are any JS errors present. Use the following to run this task:
 
-~~~
+~~~ js
 $ grunt deploy
 ~~~
 
@@ -148,14 +148,14 @@ Note: The target folder is cleaned prior to copying files.
 #### hint
 Runs JSHint on all JS files in __RAMP/src/js/RAMP/__. Use the following to run this task:
 
-~~~
+~~~ js
 $ grunt hint
 ~~~
 
 ##### --target / -tr
 To lint a specific JS file, use the __--target__ or its shortcut __-tr__ options and specify the path to the file relative to __RAMP/src/js/RAMP/__:
 
-~~~
+~~~ js
 $ grunt hint --target=Modules/datagrid.js
 $ grunt hint -tr Modules/datagrid.js
 ~~~
@@ -163,7 +163,7 @@ $ grunt hint -tr Modules/datagrid.js
 ##### --output / -o
 To lint a specific JS file, use the __--target__ or its shortcut __-tr__ options and specify the path to the file relative to __RAMP/src/js/RAMP/__:
 
-~~~
+~~~ js
 $ grunt hint --output=jsHintErrors.my
 $ grunt hint -o jsHintErrors.my
 ~~~
@@ -171,23 +171,23 @@ $ grunt hint -o jsHintErrors.my
 #### js
 JShints, uglifies, concatenates, and copies the resulting JS files and templates to the __build/js__ folder. This task _will_ fail if there are any errors present. Use the following to run this task
 
-~~~
+~~~ js
 $ grunt js
 ~~~
 
 ##### --source
 To generate source mappings for the core JS files, use __source__ option as follows:
 
-```
+~~~ js
 $ grunt js --source
-```
+~~~
 
 #### page
 Outputs English and French versions of the content template file (__ramp-src.html__) for both themes  by replacing placeholders with provided locale strings; saves them into the __build__ folder. Certain sections in the tempate file will be replaced:
 
 ##### head.wetCss
 
-~~~
+~~~ html
 <!-- build:section head.wetCss -->
     ...
 <!-- /build -->
@@ -197,7 +197,7 @@ is replaced by the content of the theme-specific file __src/pages/[theme]/head.w
 
 ##### head.wetCss
 
-~~~
+~~~ html
 <!-- build:style head.rampCssLib -->
     ...
 <!-- /build -->
@@ -207,7 +207,7 @@ is replaced by the CSS reference to __build/css/lib/lib.min.css__.
 
 ##### head.rampCssCore
 
-~~~
+~~~ html
 <!-- build:style head.rampCssCore -->
     ...
 <!-- /build -->
@@ -217,7 +217,7 @@ is replaced by the CSS reference to __build/css/[theme]/theme.less.min.css__.
 
 #####  body.wetHeader
 
-~~~
+~~~ html
 <!-- build:section body.wetHeader -->
     ...
 <!-- /build -->
@@ -227,7 +227,7 @@ is replaced by the content of the theme-specific file __src/pages/[theme]/body.w
 
 ##### body.wetFooter
 
-~~~
+~~~ html
 <!-- build:section body.wetFooter -->
     ...
 <!-- /build -->
@@ -237,7 +237,7 @@ is replaced by the content of the theme-specific file __src/pages/[theme]/body.w
 
 ##### body.wetJs
 
-~~~
+~~~ html
 <!-- build:section body.wetJs -->
     ...
 <!-- /build -->
@@ -247,7 +247,7 @@ is replaced by the content of the theme-specific file __src/pages/[theme]/body.w
 
 ##### body.rampJsLib
 
-~~~
+~~~ html
 <!-- build:script body.rampJsLib -->
     ...
 <!-- /build -->
@@ -257,7 +257,7 @@ is replaced by the JS reference to __build/js/lib/lib.min.js__.
 
 ##### body.rampJsCore
 
-~~~
+~~~ html
 <!-- build:script body.rampJsCore -->
     ...
 <!-- /build -->
@@ -271,35 +271,35 @@ Saves the newly created files into the __build__ folder.
 
 Use the following to run this task:
 
-~~~
+~~~ js
 $ grunt page
 ~~~
 
 #### watch
 _watch_ is a shortcut to run _wcss_, _wjs_, _wpage_, and _wtempate_ tasks. Use the following to run this task:
 
-~~~
-grunt watch
+~~~ js
+$ grunt watch
 ~~~
 
 #### wcss
 Watches all [LESS](http://lesscss.org) files in __RAMP/src/css/__ and runs the _css_ task on change. Use the following to run this task:
 
-~~~
+~~~ js
 $ grunt wcss
 ~~~
 
 #### wjs
 Watches all JS files in __RAMP/src/js/RAMP/__ and runs the _hint_ task on the changed file and then runs _js_ task. Use the following to run this task:
 
-~~~
+~~~ js
 $ grunt wjs
 ~~~
 
 ##### --target / -tr
 To watch for a specific JS file, use the __--target__ or its shortcut __-tr__ options and specify the path to the file relative to __RAMP/javascript/src/RAMP/__:
 
-~~~
+~~~ js
 $ grunt wjs --target=Modules/datagrid.js
 $ grunt wjs -tr Modules/datagrid.js
 ~~~
@@ -307,14 +307,14 @@ $ grunt wjs -tr Modules/datagrid.js
 #### wpage
 Watches main HTML template file __RAMP/src/ramp-src.html__ and all the theme-specific templates in __src/pages__ folder; runs _page_ task when changes are detected:
 
-~~~
+~~~ js
 $ grunt wpage
 ~~~
 
 #### wtempate
 Watches all JSON files in __RAMP/src/js/RAMP/Modules/Templates__ and copies them to the __build__ folder when changes are detected. Use the following to run this task:
 
-~~~
+~~~ js
 $ grunt wtempaltes
 ~~~
 

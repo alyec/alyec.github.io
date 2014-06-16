@@ -9,7 +9,7 @@ categories_list: [documentation, editors, math, unix]
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-markdown: redcarpet
+markdown: kramdown
 encoding: UTF-8
 title : RAMP
 tagline: Site Tagline
@@ -21,19 +21,13 @@ author :
   feedburner : feedname
 
 kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
   use_coderay: true
 
   coderay:
-    coderay_wrap: div
     coderay_line_numbers: nil
     coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+    coderay_bold_every: 100
+    coderay_css: style
 
 
 # The production_url is only used when full-domain names are needed
