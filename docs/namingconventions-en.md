@@ -60,7 +60,7 @@ We recommend using [CodeMaid](http://www.codemaid.net/) to clean up javascript f
 
 All javascript should conform to [JSHint](http://www.jshint.com/docs/options/) rules, with the following configuration options enabled
 
-~~~ js
+{% highlight js %}
 // Enforce
 
 bitwise: true
@@ -112,4 +112,4 @@ sub: false
 supernew: false
 validthis: false
 noyield: false
-~~~
+{% endhighlight %}

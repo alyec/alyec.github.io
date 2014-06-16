@@ -21,9 +21,9 @@ To install Grunt on Windows, you first need to install [Node.js](http://nodejs.o
 
 After installing the dependencies, run the following in your command shell as Administrator
 
-~~~ js
+{% highlight sh %}
 $ npm install -g grunt-cli
-~~~
+{% endhighlight %}
 
 This will add the grunt command in your system path, allowing it to be run from any directory. You might want to restart your machine, just in case.
 
@@ -57,9 +57,9 @@ To run the build tool do the following:
 3. Use __npm install__ to install project dependencies (need to run only once or when adding new modules)
 4. Use the following to run the build tool:
 
-~~~ js
+{% highlight sh %}
 $ grunt
-~~~
+{% endhighlight %}
 
 if you get an error that something is not found, try running __npm install__ again.
 
@@ -75,28 +75,28 @@ Unless you specify a task to run, __grunt__ command runs _cleanAll_, _css_, _js_
 #### --source
 To generate source mappings for the core JS files, use source option as follows:
 
-~~~ js
+{% highlight sh %}
 $ grunt --source
-~~~
+{% endhighlight %}
 
 ### Other Tasks
 The default task calls the three main build tasks and if you don’t want to build everything at once all the time, you can call any of the of build tasks individually. You can also call any of the utility tasks defined in the __Gruntfile__. You can do that by using
 
-~~~ js
+{% highlight sh %}
 $ grunt <task-name>
-~~~
+{% endhighlight %}
 
 #### api
 Generate API documentation using YUIDoc and annotated source code documents using Docco and save them in "__docs/docco__" and "__docs/yuidoc__" folder. Use the following to run this task:
 
-~~~ js
+{% highlight sh %}
 $ grunt api
-~~~
+{% endhighlight %}
 
 #### bump
 Increments the project’s version number in files __package.json__ and __yuidoc.json__. Use the following to run this task:
 
-~~~ js
+{% highlight sh %}
 $ grunt bump
 >> Version bumped to 0.0.2
 
@@ -111,7 +111,7 @@ $ grunt bump:major
 
 $ grunt bump:build
 >> Version bumped to 1.0.0-1
-~~~
+{% endhighlight %}
 
 Everytime the default or _css_, _js_, _page_ tasks are run, _bump-only:build_ is also ran as well.
 
@@ -123,145 +123,145 @@ Removes all temporary and build folders:
 
 Use the following to run this task:
 
-~~~ js
+{% highlight sh %}
 $ grunt cleanAll
-~~~
+{% endhighlight %}
 
 #### css
 Converts LESS, prefixes CSS, minifies and copies the resulting CSS files to the __build/css__ folder. Use the following to run this task:
 
-~~~ js
+{% highlight sh %}
 $ grunt css
-~~~
+{% endhighlight %}
 
 Note: You need to run this task every time you modify any *.less files since the browser cannot interpret them directly and no changes will be reflected in rendering of the page. It’s best to use _wcss_ or _watch_ task to auto-convert LESS to CSS on every change.
 
 #### deploy
 Runs the _build_ and then copies only the necessary files to a specified location leaving out source folders. This task _will_ fail if there are any JS errors present. Use the following to run this task:
 
-~~~ js
+{% highlight sh %}
 $ grunt deploy
-~~~
+{% endhighlight %}
 
 Note: The target folder is cleaned prior to copying files.
 
 #### hint
 Runs JSHint on all JS files in __RAMP/src/js/RAMP/__. Use the following to run this task:
 
-~~~ js
+{% highlight sh %}
 $ grunt hint
-~~~
+{% endhighlight %}
 
 ##### --target / -tr
 To lint a specific JS file, use the __--target__ or its shortcut __-tr__ options and specify the path to the file relative to __RAMP/src/js/RAMP/__:
 
-~~~ js
+{% highlight sh %}
 $ grunt hint --target=Modules/datagrid.js
 $ grunt hint -tr Modules/datagrid.js
-~~~
+{% endhighlight %}
 
 ##### --output / -o
 To lint a specific JS file, use the __--target__ or its shortcut __-tr__ options and specify the path to the file relative to __RAMP/src/js/RAMP/__:
 
-~~~ js
+{% highlight sh %}
 $ grunt hint --output=jsHintErrors.my
 $ grunt hint -o jsHintErrors.my
-~~~
+{% endhighlight %}
 
 #### js
 JShints, uglifies, concatenates, and copies the resulting JS files and templates to the __build/js__ folder. This task _will_ fail if there are any errors present. Use the following to run this task
 
-~~~ js
+{% highlight sh %}
 $ grunt js
-~~~
+{% endhighlight %}
 
 ##### --source
 To generate source mappings for the core JS files, use __source__ option as follows:
 
-~~~ js
+{% highlight sh %}
 $ grunt js --source
-~~~
+{% endhighlight %}
 
 #### page
 Outputs English and French versions of the content template file (__ramp-src.html__) for both themes  by replacing placeholders with provided locale strings; saves them into the __build__ folder. Certain sections in the tempate file will be replaced:
 
 ##### head.wetCss
 
-~~~ html
+{% highlight html %}
 <!-- build:section head.wetCss -->
     ...
 <!-- /build -->
-~~~
+{% endhighlight %}
 
 is replaced by the content of the theme-specific file __src/pages/[theme]/head.wetCss.html__.
 
 ##### head.wetCss
 
-~~~ html
+{% highlight html %}
 <!-- build:style head.rampCssLib -->
     ...
 <!-- /build -->
-~~~
+{% endhighlight %}
 
 is replaced by the CSS reference to __build/css/lib/lib.min.css__.
 
 ##### head.rampCssCore
 
-~~~ html
+{% highlight html %}
 <!-- build:style head.rampCssCore -->
     ...
 <!-- /build -->
-~~~
+{% endhighlight %}
 
 is replaced by the CSS reference to __build/css/[theme]/theme.less.min.css__.
 
 #####  body.wetHeader
 
-~~~ html
+{% highlight html %}
 <!-- build:section body.wetHeader -->
     ...
 <!-- /build -->
-~~~
+{% endhighlight %}
 
 is replaced by the content of the theme-specific file __src/pages/[theme]/body.wetHeader.html__.
 
 ##### body.wetFooter
 
-~~~ html
+{% highlight html %}
 <!-- build:section body.wetFooter -->
     ...
 <!-- /build -->
-~~~
+{% endhighlight %}
 
 is replaced by the content of the theme-specific file __src/pages/[theme]/body.wetFooter.html__.
 
 ##### body.wetJs
 
-~~~ html
+{% highlight html %}
 <!-- build:section body.wetJs -->
     ...
 <!-- /build -->
-~~~
+{% endhighlight %}
 
 is replaced by the content of the theme-specific file __src/pages/[theme]/body.wetJs.html__.
 
 ##### body.rampJsLib
 
-~~~ html
+{% highlight html %}
 <!-- build:script body.rampJsLib -->
     ...
 <!-- /build -->
-~~~
+{% endhighlight %}
 
 is replaced by the JS reference to __build/js/lib/lib.min.js__.
 
 ##### body.rampJsCore
 
-~~~ html
+{% highlight html %}
 <!-- build:script body.rampJsCore -->
     ...
 <!-- /build -->
-~~~
+{% endhighlight %}
 
 is replaced by the JS reference to __build/js/RAMP/RAMP-starter.js__.
 
@@ -271,52 +271,52 @@ Saves the newly created files into the __build__ folder.
 
 Use the following to run this task:
 
-~~~ js
+{% highlight sh %}
 $ grunt page
-~~~
+{% endhighlight %}
 
 #### watch
 _watch_ is a shortcut to run _wcss_, _wjs_, _wpage_, and _wtempate_ tasks. Use the following to run this task:
 
-~~~ js
+{% highlight sh %}
 $ grunt watch
-~~~
+{% endhighlight %}
 
 #### wcss
 Watches all [LESS](http://lesscss.org) files in __RAMP/src/css/__ and runs the _css_ task on change. Use the following to run this task:
 
-~~~ js
+{% highlight sh %}
 $ grunt wcss
-~~~
+{% endhighlight %}
 
 #### wjs
 Watches all JS files in __RAMP/src/js/RAMP/__ and runs the _hint_ task on the changed file and then runs _js_ task. Use the following to run this task:
 
-~~~ js
+{% highlight sh %}
 $ grunt wjs
-~~~
+{% endhighlight %}
 
 ##### --target / -tr
 To watch for a specific JS file, use the __--target__ or its shortcut __-tr__ options and specify the path to the file relative to __RAMP/javascript/src/RAMP/__:
 
-~~~ js
+{% highlight sh %}
 $ grunt wjs --target=Modules/datagrid.js
 $ grunt wjs -tr Modules/datagrid.js
-~~~
+{% endhighlight %}
 
 #### wpage
 Watches main HTML template file __RAMP/src/ramp-src.html__ and all the theme-specific templates in __src/pages__ folder; runs _page_ task when changes are detected:
 
-~~~ js
+{% highlight sh %}
 $ grunt wpage
-~~~
+{% endhighlight %}
 
 #### wtempate
 Watches all JSON files in __RAMP/src/js/RAMP/Modules/Templates__ and copies them to the __build__ folder when changes are detected. Use the following to run this task:
 
-~~~ js
+{% highlight sh %}
 $ grunt wtempaltes
-~~~
+{% endhighlight %}
 
 ### Config File - package.json
 
