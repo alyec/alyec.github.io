@@ -11,7 +11,11 @@ categories: [documentation]
 
 ## Table of Content
 {: .span-4 module-table-contents}
-* [ramp/basemapSelector](#basemapselector)* [ramp/bookmarkLink](#bookmarklink)* [ramp/datagrid](#datagrid)* [ramp/datagridClickHandler](#datagridclickhandler)
+
+* [ramp/basemapSelector](#basemapselector)
+* [ramp/bookmarkLink](#bookmarklink)
+* [ramp/datagrid](#datagrid)
+* [ramp/datagridClickHandler](#datagridclickhandler)
 * [ramp/eventManager](#eventmanager)
 * [ramp/featureClickHandler](#featureclickhandler)
 * [ramp/featureHighlighter](#featurehighlighter)
@@ -30,12 +34,6 @@ categories: [documentation]
 
 Manages the widget that allows the user to change the basemap. Utilizes the [esri.dijit.Basemap](https://developers.arcgis.com/javascript/jsapi/basemap-amd.html) dijit.  Populates the widget with basemaps from the config.  All basemaps must be in the same projection.
 
-##### API Page
-[BaseMapSelector](../api/yuidoc/classes/BaseMapSelector.html)
-
-##### Relevant Configuration Nodes
-[basemaps](json-config-en.html#basemaps)
-
 ##### Relevant Sequence Diagrams
 <section class="wb-lbx lbx-gal">	
 	<a href="../assets/images/select_basemap.svg">
@@ -43,9 +41,9 @@ Manages the widget that allows the user to change the basemap. Utilizes the [esr
 	</a>
 </section>
 
-##### Template Summary
-
-[Basemap Selector](template-summary-en.html#basemap_selector)
+| **API Page** | [BaseMapSelector](../api/yuidoc/classes/BaseMapSelector.html)
+| **Relevant Configuration Nodes** | [basemaps](json-config-en.html#basemaps)
+| **Template Summary** | [Basemap Selector](template-summary-en.html#basemap_selector)
 
 [Back To Top](#top)
 {: .text-right}
@@ -58,11 +56,8 @@ Manages the widget that allows the user to change the basemap. Utilizes the [esr
 
 Manages the widget that allows the maps current state to be displayed as a URL.  Listens for specific site events and updates the link as they occur.  Allows emailing of link, url shortning of link.
 
-##### API Page
-[BookmarkLink](../api/yuidoc/classes/BookmarkLink.html)
-
-##### Relevant Configuration Nodes
-[lang](json-config-en.html#lang_field)
+| **API Page** | [BookmarkLink](../api/yuidoc/classes/BookmarkLink.html)
+| **Relevant Configuration Nodes** | [lang](json-config-en.html#lang_field)
 
 [Back To Top](#top)
 {: .text-right}
@@ -87,18 +82,6 @@ Finding a feature in the grid -- expand when Aly has enhanced it
 
 The grid contains buttons to obtain details and zoom to row items.  This is done via the dataGridClickHandler module (see below).  In future releases, we plan to have this extensible to allow easy overriding of the controls.
 
-##### API Page
-
-[Datagrid](../api/yuidoc/classes/Datagrid.html)
-
-##### Relevant Configuration Nodes
-[datagrid](json-config-en.html#datagrid)
-
-[featureLayers[].datagrid](json-config-en.html#featurelayers_datagrid)
-
-[gridstrings](json-config-en.html#gridstrings)
-
-
 ##### Relevant Sequence Diagrams
 
 <section class="wb-lbx lbx-gal">	
@@ -107,11 +90,9 @@ The grid contains buttons to obtain details and zoom to row items.  This is done
 	</a>
 </section>
 
-##### Template Summary
-
-[Datagrid Summary Mode](template-summary-en.html#datagrid_summary_mode)
-
-[Datagrid Expanded Mode](template-summary-en.html#datagrid_expanded_mode)
+| **API Page** | [Datagrid](../api/yuidoc/classes/Datagrid.html) | 
+| **Relevant Configuration Nodes** | [datagrid](json-config-en.html#datagrid) <br /> [featureLayers[].datagrid](json-config-en.html#featurelayers_datagrid) <br /> [gridstrings](json-config-en.html#gridstrings) |
+| **Template Summary** | [Datagrid Summary Mode](template-summary-en.html#datagrid_summary_mode) <br /> [Datagrid Expanded Mode](template-summary-en.html#datagrid_expanded_mode) |
 
 [Back To Top](#top)
 {: .text-right}
@@ -128,9 +109,6 @@ The zoom function consists of the map zooming to the feature in question, where 
 
 The view detail function involves generating a custom detail report (from a template) and displaying it in a slide-out panel.  
 
-##### API Page
-[DatagridClickHandler](../api/yuidoc/classes/DatagridClickHandler.html)
-
 ##### Relevant Sequence Diagrams
 
 <section class="wb-lbx lbx-gal">	
@@ -145,6 +123,8 @@ The view detail function involves generating a custom detail report (from a temp
 	</a>
 </section>
 
+| **API Page** | [DatagridClickHandler](../api/yuidoc/classes/DatagridClickHandler.html)
+
 [Back To Top](#top)
 {: .text-right}
 
@@ -156,8 +136,7 @@ The view detail function involves generating a custom detail report (from a temp
 
 The module defines event names as constants to avoid typing errors.
 
-##### API Page
-[EventManager](../api/yuidoc/classes/EventManager.html)
+| **API Page** | [EventManager](../api/yuidoc/classes/EventManager.html)
 
 [Back To Top](#top)
 {: .text-right}
@@ -171,9 +150,6 @@ The module defines event names as constants to avoid typing errors.
 The module contains the handler functions that react to the mouse interacting with features on the map.
 
 This primarily consists of clicking a feature, and hovering over a feature.  For the most part, this class publishes appropriate events; the event listeners in other classes implement the reaction to the interactions.
-
-##### API Page
-[FeatureClickHandler](../api/yuidoc/classes/FeatureClickHandler.html)
 
 ##### Relevant Sequence Diagrams
 
@@ -189,6 +165,8 @@ This primarily consists of clicking a feature, and hovering over a feature.  For
 	</a>
 </section>
 
+| **API Page** | [FeatureClickHandler](../api/yuidoc/classes/FeatureClickHandler.html)
+
 [Back To Top](#top)
 {: .text-right}
 
@@ -203,9 +181,6 @@ The module implements the highlighting of features on the map during hover and s
 There are three types of highlighting: Click highlighting, Zoom highlighting, and Hover highlighting.  All are acomplished by fading out the map and duplicating the feature in question in a highliting layer, shown at regular brightness above the faded items.
 
 The module also generates the graphic layers used to manage the highlight imagery
-
-##### API Page
-[FeatureHighlighter](../api/yuidoc/classes/FeatureHighlighter.html)
 
 ##### Relevant Sequence Diagrams
 
@@ -226,6 +201,8 @@ The module also generates the graphic layers used to manage the highlight imager
 		<img src="../assets/images/zoom_to_feature.svg" alt="Zoom to a Feature" style="max-width:80%" />
 	</a>
 </section>
+
+| **API Page** | [FeatureHighlighter](../api/yuidoc/classes/FeatureHighlighter.html)
 
 [Back To Top](#top)
 {: .text-right}
@@ -248,16 +225,6 @@ The following actions are performed by the module
 * Handle the toggling of bounding boxes for layers
 * Changing the draw order of layers on the map
 
-##### API Page
-[FilterManager](../api/yuidoc/classes/FilterManager.html)
-
-##### Relevant Configuration Nodes
-[featureLayers[].id](json-config-en.html#featurelayers_id)
-
-[featureLayers[].displayName](json-config-en.html#featurelayers_displayname)
-
-[featureLayers[].symbology](json-config-en.html#featurelayers_symbology)
-
 ##### Relevant Sequence Diagrams
 
 <section class="wb-lbx lbx-gal">	
@@ -278,11 +245,9 @@ The following actions are performed by the module
 	</a>
 </section>
 
-##### Template Summary
-
-[Filter Global Row](template-summary-en.html#filter_global_row)
-
-[Filter Row](template-summary-en.html#filter_row)
+| **API Page** | [FilterManager](../api/yuidoc/classes/FilterManager.html)
+| **Relevant Configuration Nodes** |  [featureLayers[].id](json-config-en.html#featurelayers_id) <br /> [featureLayers[].displayName](json-config-en.html#featurelayers_displayname) <br /> [featureLayers[].symbology](json-config-en.html#featurelayers_symbology)
+| **Template Summary** | [Filter Global Row](template-summary-en.html#filter_global_row) <br /> [Filter Row](template-summary-en.html#filter_row)
 
 [Back To Top](#top)
 {: .text-right}
@@ -296,8 +261,7 @@ The following actions are performed by the module
 
 The module defines global items to make things easier to share across modules.  We place location specific string here (e.g. a configuration server URL), so this servers as the spot to tweak when moving the application to a different environment.  Implementers can also add items to this module on the fly.
 
-##### API Page
-[GlobalStorage](../api/yuidoc/classes/GlobalStorage.html)
+| **API Page** | [GlobalStorage](../api/yuidoc/classes/GlobalStorage.html)
 
 [Back To Top](#top)
 {: .text-right}
@@ -311,12 +275,8 @@ The module defines global items to make things easier to share across modules.  
 
 The module contains helper functions for [graphic](https://developers.arcgis.com/javascript/jsapi/graphic-amd.html) objects.  E.g. get objectId, get layer, get detail text
 
-
-##### API Page
-[GraphicExtension](../api/yuidoc/classes/GraphicExtension.html)
-
-##### Relevant Configuration Nodes
-[featureLayers[].detailTemplate](json-config-en.html#featurelayers_detailtemplate)
+| **API Page** | [GraphicExtension](../api/yuidoc/classes/GraphicExtension.html)
+| **Relevant Configuration Nodes** | [featureLayers[].detailTemplate](json-config-en.html#featurelayers_detailtemplate)
 
 [Back To Top](#top)
 {: .text-right}
@@ -336,15 +296,9 @@ Implements the side panel, help popup, add layer popup and registers those panel
 
 Contains logic to go to full-screen mode.
 
-##### API Page
-[GUI](../api/yuidoc/classes/GUI.html)
-
-##### Relevant Configuration Nodes
-[stringResources](json-config-en.html#stringresources)
-
-##### Template Summary
-
-[Feature Details Panel](template-summary-en.html#feature_details_panel)
+| **API Page** | [GUI](../api/yuidoc/classes/GUI.html)
+| **Relevant Configuration Nodes** |  [stringResources](json-config-en.html#stringresources)
+| **Template Summary** | [Feature Details Panel](template-summary-en.html#feature_details_panel)
 
 [Back To Top](#top)
 {: .text-right}
@@ -359,28 +313,6 @@ The map module generates the map control and adds layers to the map, as defined 
 
 It also generates and hosts the scale bar.
 
-##### API Page
-[Map](../api/yuidoc/classes/Map.html)
-
-##### Relevant Configuration Nodes
-[basemaps[].showOnInit](json-config-en.html#basemaps_showoninit)
-
-[basemaps[].url](json-config-en.html#basemaps_url)
-
-[extents](json-config-en.html#extents)
-
-[featureLayers[].url](json-config-en.html#featurelayers_url)
-
-[featureLayers[].layerAttributes](json-config-en.html#featurelayers_layerattributes)
-
-`featureLayers[].staticLayers`
-
-[levelOfDetails.minLevel](json-config-en.html#levelofdetails_minlevel)
-
-[levelOfDetails.maxLevel](json-config-en.html#levelofdetails_maxlevel)
-
-[spatialReference](json-config-en.html#spatialreference)
-
 ##### Relevant Sequence Diagrams
 
 <section class="wb-lbx lbx-gal">	
@@ -388,6 +320,9 @@ It also generates and hosts the scale bar.
 		<img src="../assets/images/filter_data_sequence.svg" alt="Filter Data Sequence" style="max-width:80%" />
 	</a>
 </section>
+
+| **API Page** | [Map](../api/yuidoc/classes/Map.html)
+| **Relevant Configuration Nodes** | [basemaps[].showOnInit](json-config-en.html#basemaps_showoninit) <br /> [basemaps[].url](json-config-en.html#basemaps_url) <br /> [extents](json-config-en.html#extents) <br /> [featureLayers[].url](json-config-en.html#featurelayers_url) <br /> [featureLayers[].layerAttributes](json-config-en.html#featurelayers_layerattributes) <br /> `featureLayers[].staticLayers` <br /> [levelOfDetails.minLevel](json-config-en.html#levelofdetails_minlevel) <br /> [levelOfDetails.maxLevel](json-config-en.html#levelofdetails_maxlevel) <br /> [spatialReference](json-config-en.html#spatialreference)
 
 [Back To Top](#top)
 {: .text-right}
@@ -400,14 +335,6 @@ It also generates and hosts the scale bar.
 The module handles maptip interaction (both hover and anchor). Includes positioning logic for tips.
 
 Fills the tips with contents from the template.
-
-
-##### API Page
-[Maptips](../api/yuidoc/classes/Maptips.html)
-
-##### Relevant Configuration Nodes
-[featureLayers[].mapTipSettings](json-config-en.html#featurelayers_maptipsettings)
-
 
 ##### Relevant Sequence Diagrams
 
@@ -423,11 +350,9 @@ Fills the tips with contents from the template.
 	</a>
 </section>
 
-##### Template Summary
-
-[Feature Hover Tip](template-summary-en.html#feature_hover_tip)
-
-[Feature Anchor Tip](template-summary-en.html#feature_anchor_tip)
+| **API Page** | [Maptips](../api/yuidoc/classes/Maptips.html)
+| **Relevant Configuration Nodes** | [featureLayers[].mapTipSettings](json-config-en.html#featurelayers_maptipsettings)
+| **Template Summary** | [Feature Hover Tip](template-summary-en.html#feature_hover_tip) <br /> Feature Anchor Tip](template-summary-en.html#feature_anchor_tip)
 
 [Back To Top](#top)
 {: .text-right}
@@ -443,11 +368,8 @@ The module handles the navigation widget.  It constructs it and applies a CSS sk
 Also handles the two-way synchronization between the map extent and the widget state.
 
 
-##### API Page
-[Navigation](../api/yuidoc/classes/Navigation.html)
-
-##### Relevant Configuration Nodes
-[navWidget](json-config-en.html#navwidget)
+| **API Page** | [Navigation](../api/yuidoc/classes/Navigation.html)
+| **Relevant Configuration Nodes**  | [navWidget](json-config-en.html#navwidget)
 
 [Back To Top](#top)
 {: .text-right}
@@ -466,11 +388,8 @@ NOTE: Depends on one of our quickzoom services.  These will be on public product
 
 NOTE: our current config file does not have the appropriate node.  We should add this to the sample
 
-##### API Page
-[QuickZoom](../api/yuidoc/classes/QuickZoom.html)
-
-##### Relevant Configuration Nodes
-: `quickzoom`
+| **API Page** | [QuickZoom](../api/yuidoc/classes/QuickZoom.html)
+| **Relevant Configuration Nodes** | `quickzoom`
 
 [Back To Top](#top)
 {: .text-right}
@@ -483,8 +402,7 @@ NOTE: our current config file does not have the appropriate node.  We should add
 
 The map module contains shared functions used by RAMP.  In particular, it houses functions that depend on the configuration object.  
 
-##### API Page
-[RAMP](../api/yuidoc/classes/RAMP.html)
+| **API Page** | [RAMP](../api/yuidoc/classes/RAMP.html) 
 
 [Back To Top](#top)
 {: .text-right}
